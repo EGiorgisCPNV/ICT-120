@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form>
+        <input id="ZoneText" type="text" name="qqch" value="" />
+        <input id="bouttonGO" type="button" value="Envoi" >
+        <input id="ZoneText2" type="text" name="qqch2" value=""/>
+    </form>
+</body>
+    <script>
+        function transfert()
+        {
+            if( ZoneText.value=="")
+            {
+                alert("Ereur le premier text ne contient rien");
+            }
+            else
+            {
+                ZoneText2.value= ZoneText.value;
+                ZoneText.value="";
+            }
+
+        }
+       bouttonGO.addEventListener('click', transfert);
+
+    </script>
+
+</html>

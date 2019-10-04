@@ -6,8 +6,76 @@
 </head>
 <body>
 <form action="Index.php" method="post">
-    First name: <input type="text" name="firstname" value="Mickey"><br>
+    First name: <input id=txtFirstName type="text" name="firstname" value="Mickey"><br>
     Last name: <input type="text" name="lastname" value="Mouse"><br><br>
+    Je suis un terroriste <input id=chkTerrorist type="checkbox" name="terrorist"><br><br>
     <input type="submit" value="Submit"></form>
 </body>
+
+<script>
+
+    //test si le boutton checkbox est cliquer
+    function chkTerroristClick() {
+
+        //condition de la fonction
+        if (chkTerrorist.checked) {
+            alert('Wesh Dahvide T Pa Bo, ' + txtFirstName.value + 'et un terrorist');
+        }
+    }
+
+    //permet de verifier quand il si il appuie sur le boutton et si il appuie sur le boutton il va rentrer dnas la fonction
+    chkTerrorist.addEventListener('click', chkTerroristClick);
+
+
+    //fonction qui affiche le name et l'age dans un dialogue box
+    function hello(name, age) {
+        //con
+        if (age >= 18) {
+            alert('Bonjour Monsieur ' + name);
+            return true;//permet de ne pas pouvoir continuer, bloque
+        } else {
+            alert('Salut ' + name);
+            return true;//permet de ne pas pouvoir continuer, bloque
+        }
+
+    }
+
+
+    //permet d'afficher dans une pop-up
+    console.log(hello('Arthur', 16));
+    console.log(hello('Dhavid', 19));
+    console.log(hello('Bastien', 17));
+
+
+    firstname = 'Gertrude';
+
+    age = prompt("Quel age avez-vous ?");
+
+    //boucle qui affiche un message si l'utilisateur indique un age negatif ou egale a 0
+    while (age < 0) {
+        alert('impossible trop jeune');
+        age = prompt("Quel age avez-vous ?");
+    }
+
+    // condition qui affiche un message si l'utilisateur rentre un message superrieur a 25
+    if (age >= 25) {
+        alert('Plus garnd que 25');
+        age = prompt("Quel age avez-vous ?");
+    }
+
+
+    for (i = 16; i < 25; i++)//(le int (du i) n'est pas obligatoire en java
+    {
+
+        //condition pour faire changer le text par rapport a l'age
+        if (i > 18) {
+            alert("Bonjour Madame " + firstname + " (" + i + " )");
+
+        } else {
+            alert("Bonjour mademoiselle " + firstname + " (" + i + " )");
+        }
+    }
+
+
+</script>
 </html>

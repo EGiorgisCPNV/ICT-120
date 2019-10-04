@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4b85b6ea-5f15-4733-9e80-877776b31b4f" name="Default Changelist" comment="" />
+    <list default="true" id="f44ea019-21b4-4fab-b5cf-5fa47e8f4c95" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,15 +21,14 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
-  <component name="ProjectId" id="1QPg5wyHe9rPArYb8pb253jRbYy" />
+  <component name="ProjectId" id="1RgOLl4YOY5pDLY1b7FAMXKmd9d" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/php-7.3.9-nts-Win32-VC15-x64/php.exe" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Site voyage détude" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -48,17 +47,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4b85b6ea-5f15-4733-9e80-877776b31b4f" name="Default Changelist" comment="" />
-      <created>1567677466271</created>
+      <changelist id="f44ea019-21b4-4fab-b5cf-5fa47e8f4c95" name="Default Changelist" comment="" />
+      <created>1570085218733</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1567677466271</updated>
-      <workItem from="1567677468778" duration="50000" />
-      <workItem from="1567677566144" duration="109000" />
-      <workItem from="1567677695563" duration="302000" />
-      <workItem from="1567678013501" duration="231000" />
-      <workItem from="1567678255667" duration="100000" />
-      <workItem from="1569488359616" duration="9482000" />
+      <updated>1570085218733</updated>
+      <workItem from="1570085219801" duration="3009000" />
     </task>
     <servers />
   </component>
@@ -70,9 +64,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>

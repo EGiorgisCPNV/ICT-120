@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4b85b6ea-5f15-4733-9e80-877776b31b4f" name="Default Changelist" comment="" />
+    <list default="true" id="95c3f6d3-522f-49c6-9179-116d1762642e" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,15 +21,15 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
-  <component name="ProjectId" id="1QPg5wyHe9rPArYb8pb253jRbYy" />
+  <component name="ProjectId" id="1RPo2XH4k1e4ycSJpr7WXCkZops" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/php-7.3.9-nts-Win32-VC15-x64/php.exe" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../untitled1" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -48,17 +48,16 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4b85b6ea-5f15-4733-9e80-877776b31b4f" name="Default Changelist" comment="" />
-      <created>1567677466271</created>
+      <changelist id="95c3f6d3-522f-49c6-9179-116d1762642e" name="Default Changelist" comment="" />
+      <created>1569577884248</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1567677466271</updated>
-      <workItem from="1567677468778" duration="50000" />
-      <workItem from="1567677566144" duration="109000" />
-      <workItem from="1567677695563" duration="302000" />
-      <workItem from="1567678013501" duration="231000" />
-      <workItem from="1567678255667" duration="100000" />
-      <workItem from="1569488359616" duration="9482000" />
+      <updated>1569577884248</updated>
+      <workItem from="1569577885482" duration="14000" />
+      <workItem from="1569577929979" duration="3000" />
+      <workItem from="1569578236332" duration="711000" />
+      <workItem from="1570083283014" duration="525000" />
+      <workItem from="1570083830044" duration="1204000" />
     </task>
     <servers />
   </component>
