@@ -28,7 +28,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Modification_dune_image_par_survol_de_liens" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -54,6 +54,7 @@
       <updated>1570083869921</updated>
       <workItem from="1570083871095" duration="3131000" />
       <workItem from="1570102852911" duration="48000" />
+      <workItem from="1570193130387" duration="17000" />
     </task>
     <servers />
   </component>

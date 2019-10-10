@@ -28,7 +28,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Modification_dune_image_par_liste_déroulante" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -55,6 +55,8 @@
       <workItem from="1570083426456" duration="384000" />
       <workItem from="1570083822611" duration="604000" />
       <workItem from="1570085061210" duration="2232000" />
+      <workItem from="1570189618859" duration="698000" />
+      <workItem from="1570191663097" duration="877000" />
     </task>
     <servers />
   </component>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cba6aa0b-33c6-4c55-910c-0258f0a6014e" name="Default Changelist" comment="" />
+    <list default="true" id="0c8a3d8f-6b2f-4e76-9398-50345832e427" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,20 +13,8 @@
       <executable />
     </execution>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="HTML File" />
-      </list>
-    </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="ProjectId" id="1RgT1GeiZyf4an5zmo1jTzxZGdq" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1Rjv8lcW8rI0phFawy5eULa0prC" />
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -47,34 +35,15 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="cba6aa0b-33c6-4c55-910c-0258f0a6014e" name="Default Changelist" comment="" />
-      <created>1570087522486</created>
+      <changelist id="0c8a3d8f-6b2f-4e76-9398-50345832e427" name="Default Changelist" comment="" />
+      <created>1570193162626</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1570087522486</updated>
-      <workItem from="1570087523552" duration="4759000" />
-      <workItem from="1570102898275" duration="862000" />
-      <workItem from="1570107126098" duration="861000" />
-      <workItem from="1570178090115" duration="325000" />
-      <workItem from="1570179504654" duration="1872000" />
-      <workItem from="1570191927904" duration="2000" />
+      <updated>1570193162626</updated>
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
 </project>

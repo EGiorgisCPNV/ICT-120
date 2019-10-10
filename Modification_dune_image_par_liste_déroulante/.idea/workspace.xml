@@ -28,7 +28,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TraitementDeVariable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -53,6 +53,9 @@
       <option name="presentableId" value="Default" />
       <updated>1570107240859</updated>
       <workItem from="1570107242036" duration="1368000" />
+      <workItem from="1570178274879" duration="6191000" />
+      <workItem from="1570191906067" duration="4000" />
+      <workItem from="1570191920783" duration="19000" />
     </task>
     <servers />
   </component>
@@ -64,7 +67,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

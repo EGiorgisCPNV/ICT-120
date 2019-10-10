@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,14 +6,27 @@
     <title>Title</title>
 </head>
 <body>
-<a href="#" onmouseover="document.getElementById('images').src='image/avion.png'">Avion</a><br>
-<a href="#" onmouseover="document.getElementById('images').src='image/araignee.png'">Araignée</a><br>
 
-<select>
-    select.options[
 
-    ]
-</select>
+<FORM>
+    <SELECT id="liste" onchange="listeDeroulante()">
+        <OPTION value="image/image1.png"> Avion</OPTION>
+        <OPTION value="image/image2.png"> Araigne</OPTION>
+    </SELECT>
+</FORM>
+
+
 </body>
+<script>
+    function listeDeroulante() {
 
+        x=document.getElementById('liste');
+        y=document.getElementById('images');
+
+        y.src=x.value;//tous les value de la liste sera mis a la place de src de y
+    }
+
+</script>
+
+<img id="images">
 </html>
