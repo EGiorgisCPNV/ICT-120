@@ -28,7 +28,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lecture_champs_text" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Ecriture_dun_champ_texte" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -55,6 +55,7 @@
       <workItem from="1570182883138" duration="54000" />
       <workItem from="1570182948070" duration="5828000" />
       <workItem from="1570191934503" duration="2022000" />
+      <workItem from="1570694874087" duration="7639000" />
     </task>
     <servers />
   </component>

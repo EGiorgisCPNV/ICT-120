@@ -7,21 +7,19 @@
 <body>
 <FORM>
 
-    Min<SELECT id="Min" onchange="listeDeroulante()">
+    Min<SELECT id="Min">
 
 </SELECT>
-    
-    Max<SELECT>
-    <OPTION></OPTION>
+
+    Max<SELECT id="Max">
+
 </SELECT>
-    
-    <input type="button" value="GO">
-    
+
+    <input id="button" type="button" value="GO" onclick="TestParseInt()">
+
 </FORM>
 
-<div>
-    
-</div>
+<p id="ZoneText"></p>
 
 
 </body>
@@ -29,20 +27,77 @@
 <script>
 
 
-        var best_scores = new Array();
+    //creation d'un tableau
+    var UnADix = new Array();
 
-        for(i=0;i<10;i++){
-            best_scores[i]=i;
+
+    //list1 est egale au option de de min
+    var list1 = document.getElementById("Min");
+
+    //Inutile c'est juste un test
+    var list4 = document.getElementById("list3");
+
+    //pour le Min
+    for (i = 1; i < 11; i++) {
+
+        //newoption va créer une option a min
+        var newoptionUnADix = document.createElement("option");
+
+        UnADix[i] = i;
+        newoptionUnADix.textContent = UnADix[i];
+
+        //affect la valeur de de newoption a list1 qui lui va ajouter les valeur du select min
+        list1.appendChild(newoptionUnADix);
+    }
+
+
+    //fin du min
+
+    ////////////////////////////////////////////////////////////////////////////////////
+
+
+    //pour le max
+
+    //creation d'un tableau
+    var DixACentMoinUn = new Array();
+
+
+    //list1 est egale au option de de min
+    var list2 = document.getElementById("Max");
+
+    //pour le Min
+    for (i = 11; i < 100; i++) {
+
+        //newoption va créer une option a min
+        var newoptionDixACentMoinUn = document.createElement("option");
+
+        DixACentMoinUn[i] = i;
+        newoptionDixACentMoinUn.textContent = DixACentMoinUn[i];
+
+        //affect la valeur de de newoption a list1 qui lui va ajouter les valeur du select min
+        list2.appendChild(newoptionDixACentMoinUn);
+    }
+    //fin du max
+
+    ////////////////////////////////////////////////////////////////////////////////////
+
+
+    function TestParseInt() {
+
+        var TableauNbr = new Array();
+        var NbrMin = document.getElementById("Min").selectedIndex;
+        var NbrMax = document.getElementById("Max").selectedIndex;
+       var f=11;
+
+        for (e = 0; e < f; e++) {
+            TableauNbr[e] = NbrMin + 1;
+
+
+            document.getElementById("ZoneText").textContent = TableauNbr[e];
         }
 
 
-    var list1=document.getElementById("Min");
-
-        for(aasd)
-    var newoption= document.createElement("option");
-    newoption.textContent = best_scores[];
-    list1.appendChild(newoption);
-
+    }
 
 
 </script>
