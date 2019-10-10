@@ -87,13 +87,25 @@
         var TableauNbr = new Array();
         var NbrMin = document.getElementById("Min").selectedIndex;
         var NbrMax = document.getElementById("Max").selectedIndex;
-       var f=11;
+        var NbrMinAffichage=NbrMin;
+        var NbrMaxAffichage=NbrMax+10;
 
-        for (e = 0; e < f; e++) {
-            TableauNbr[e] = NbrMin + 1;
+        for (NbrMinAffichage; NbrMinAffichage <= NbrMaxAffichage; NbrMinAffichage++) {
 
+            console.log(NbrMinAffichage);//permet de voir l'avancement de la valeur de "NbrMinAffichage"
 
-            document.getElementById("ZoneText").textContent = TableauNbr[e];
+            TableauNbr[NbrMinAffichage] = NbrMinAffichage + 1;
+
+            if(NbrMinAffichage<NbrMaxAffichage){
+                document.getElementById("ZoneText").textContent+= TableauNbr[NbrMinAffichage] + ", ";
+            }
+            else
+
+            if(NbrMinAffichage===NbrMaxAffichage)
+            {
+                document.getElementById("ZoneText").textContent += TableauNbr[NbrMaxAffichage];
+            }
+
         }
 
 
