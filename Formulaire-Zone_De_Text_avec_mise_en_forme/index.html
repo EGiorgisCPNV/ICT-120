@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <input type="button" id="boutton" value="B" onclick="TextArea()">
+
+    <input type="button" id="boutton2" value="I" onclick="TextArea2()">
+
+    <input type="button" id="boutton3" value="U" onclick="TextArea3()"><br>
+
+    <textarea id="Text"> </textarea>
+</div>
+
+</body>
+<script>
+    function TextArea() {
+
+        var TextDeBase = prompt("Text a insérer");//valeur de la demande de text
+
+            document.getElementById("Text").value+="[<b>" + TextDeBase + "</b>]";
+
+    }
+
+
+    function TextArea2() {
+
+        var TextDeBase = prompt("Text a insérer");//valeur de la demande de text
+
+        document.getElementById("Text").value+="[<i>" + TextDeBase + "</i>]";
+
+    }
+
+
+    function TextArea3() {
+
+        var TextDeBase = prompt("Text a insérer");//valeur de la demande de text
+
+        document.getElementById("Text").value+="[<u>" + TextDeBase + "</u>]";
+
+    }
+</script>
+</html>
