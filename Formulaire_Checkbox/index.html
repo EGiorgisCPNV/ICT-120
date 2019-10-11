@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <input type="checkbox" id="chkb1">Les cours<br>
+    <input type="checkbox" id="chkb2">Les manifestation<br>
+    <input type="checkbox" id="chkb3">Les horaires<br>
+
+    <a  id="Tous" onclick="Tous()">Tous</a>
+     | <a id="Aucun" onclick="Aucun()">Aucun</a>
+     | <a id="Inverser" onclick="Inverser()">Inverser</a>
+</div>
+</body>
+<script>
+
+    function Tous(){
+        chkb1.checked=true;
+        chkb2.checked=true;
+        chkb3.checked=true;
+    }
+
+    function Aucun(){
+        chkb1.checked=false;
+        chkb2.checked=false;
+        chkb3.checked=false;
+    }
+
+    function Inverser(){
+
+        if(chkb1.checked){
+            chkb1.checked=false;
+        }
+        else
+        if(chkb2.checked){
+            chkb2.checked=false;
+        }
+        else
+        if(chkb3.checked){
+            chkb3.checked=false;
+        }
+        else
+        if(chkb1.checked===false){
+            chkb1.checked=true;
+        }
+        else
+        if(chkb2.checked===false){
+            chkb2.checked=true;
+        }
+        else
+        if(chkb3.checked===false){
+            chkb3.checked=true;
+        }
+
+    }
+
+</script>
+</html>
