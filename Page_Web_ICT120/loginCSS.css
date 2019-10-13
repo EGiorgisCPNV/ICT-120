@@ -1,3 +1,23 @@
-#bandoVE {
+#bordure {
     border-style:solid;
+    text-align : center;
+    margin-top:5px;
+
+}
+
+#logoCPNV {
+    margin-top:5px;
+
+}
+
+.h3{
+    text-align: center;
+}
+
+
+#posi_du_site {
+    border-style:solid;
+    text-align : left;
+    margin-top:5px;
+
 }
