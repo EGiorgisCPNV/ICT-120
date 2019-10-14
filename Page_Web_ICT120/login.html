@@ -8,6 +8,7 @@
     <!--lien pour le css et bootstrap-->
     <link rel="stylesheet" type="text/css" href="loginCSS.css">
     <link rel="stylesheet" href="bootstrap-4.3.1-dist/bootstrap.css">
+    <script type="text/javascript" src="login.js"></script>
 </head>
 <body>
 
@@ -62,22 +63,21 @@
         <div class="container">
             <form>
                 <div class="col">
+
+                    <!--email-->
                     <div class="form-group">
                         <h4 id="titreIdentifiant">Identifiant</h4>
                         <input type="email" class="form-control" id="exampleInputEmail1"
                                placeholder="Entrer votre adresse mail" size="55%">
                     </div>
 
-
+                    <!--mot de passe-->
                     <div class="form-group">
                         <h4 id="titreMDP">Mot de passe</h4>
-                        <input type="password" class="form-control" id="exampleInputPassword1"
-                               placeholder="Mot de passe">
-                    </div>
+                        <input type="password" class="form-control" id="mdp"
+                               placeholder="Mot de passe" onload="SwitchPass()">
 
-
-                    <div>
-                        <input type="checkbox" id="chkBoxMDP">MDP
+                        <a href="#" id="AffPass" onclick="SwitchPass()">Afficher mot de passe</a>
                     </div>
 
                     <button type="submit" class="btn btn-primary" id="bouttonConnection">Connection</button>
@@ -85,6 +85,10 @@
 
             </form>
         </div>
+    </div>
+
+    <div>
+
     </div>
 
 
@@ -106,4 +110,3 @@
 </html>
 
 
-<!-- https://getbootstrap.com/docs/4.0/components/input-group/ VAS SUR CE LIEN -->
