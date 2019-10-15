@@ -1,10 +1,91 @@
+<!--Auteur:Esteban Giorgis-->
+<!--Titre:Page login de mon site web-->
+<!--date:15.10.2019-->
+<!--Version:1.0-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Page d'activités</title>
+
+    <!--lien pour le css et bootstrap-->
+    <link rel="stylesheet" type="text/css" href="page_activite.css">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/bootstrap.css">
+    <script type="text/javascript" src="login.js"></script>
 </head>
 <body>
+<div class="container">
 
+
+    <div id="blockDuHaut">
+        <!-- logo du cpnv-->
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 " id="logoCPNV">
+                <a href="login.html">
+                    <img src="images/logo Cpnv.png" alt="logoCpnv">
+                </a>
+            </div>
+
+            <!--bando : "Voyage d'étude"-->
+            <div class="col">
+                <div class="col-lg-12 col-md-12 col-sm-12 " id="bandoVE">
+                    <h3>Voyage d'étude</h3>
+                </div>
+
+
+                <!--Menu localisation sur le site-->
+                <div class="col-lg-12 col-md-12 col-sm-12 " id="posi_du_site">
+                    <a href="page_activite.html">Accueil </a> >
+                    <a href="login.html">login </a>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Barre de recherche-->
+    <div id="blockDuMillieu">
+        <div class="row">
+            <nav class="navbar navbar-inverse">
+                <form class="navbar-form navbar-right inline-form">
+                    <div class="form-group">
+                        <div class="col-lg-11 col-md-9 col-sm-">
+                            <input type="search" class="input-sm form-control" placeholder="Recherche" size="125%">
+                            <input type="button" id="buttonRecherche" value="Rechercher">
+                        </div>
+
+                    </div>
+                </form>
+            </nav>
+        </div>
+    </div>
+
+    <!--block de toute les activités-->
+    <h3 id="titreLogin">Activités</h3>
+    <div id="activités">
+        <div class="container">
+            <form>
+            </form>
+        </div>
+    </div>
+
+
+    <!--Panier-->
+    <div id="panier">
+        <div class="container">
+            <form>
+                <div class="col">
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+
+</div>
 </body>
 </html>
