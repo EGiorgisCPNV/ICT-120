@@ -53,7 +53,7 @@
             <nav class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <form class="navbar-form navbar-right inline-form">
                     <div class="form-group">
-                        <input type="search" class="input-sm form-control" placeholder="Recherche" size="125%">
+                        <input type="search" class="input-sm form-control" placeholder="Recherche" ">
                         <input type="button" id="buttonRecherche" value="Rechercher">
                     </div>
                 </form>
@@ -65,30 +65,30 @@
     <!--block qui contien la demande d'email et du mot de passe-->
     <h3 id="titreLogin">Login</h3>
     <div id="blockDuBas">
-        <div class="container">
-            <form>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <!--email-->
-                    <div class="form-group">
-                        <h4 id="titreIdentifiant">Identifiant</h4>
-                        <input type="email" class="form-control" id="exampleInputEmail1"
-                               placeholder="Entrer votre adresse mail" size="55%">
-                    </div>
 
-                    <!--mot de passe-->
-                    <div class="form-group">
-                        <h4 id="titreMDP">Mot de passe</h4>
-                        <input type="password" class="form-control" id="mdp"
-                               placeholder="Mot de passe" onload="SwitchPass()">
-
-                        <a href="#" id="AffPass" onclick="SwitchPass()">Afficher mot de passe</a>
-                    </div>
-
-                    <button type="submit" class="btn btn-primary" id="bouttonConnection" onclick="Stockage()" >Connection</button>
+        <form>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <!--email-->
+                <div class="form-group">
+                    <h4 id="titreIdentifiant">Identifiant</h4>
+                    <input type="email" class="form-control" id="exampleInputEmail1"
+                           placeholder="Entrer votre adresse mail" size="55%">
                 </div>
 
-            </form>
-        </div>
+                <!--mot de passe-->
+                <div class="form-group">
+                    <h4 id="titreMDP">Mot de passe</h4>
+                    <input type="password" class="form-control" id="mdp"
+                           placeholder="Mot de passe" onload="SwitchPass()">
+
+                    <a href="#" id="AffPass" onclick="SwitchPass()">Afficher mot de passe</a>
+                </div>
+
+                <button type="submit" class="btn btn-primary" id="bouttonConnection" onclick="Stockage()">Connection
+                </button>
+            </div>
+
+        </form>
     </div>
 
     <div>
