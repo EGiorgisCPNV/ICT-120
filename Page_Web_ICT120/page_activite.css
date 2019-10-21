@@ -4,7 +4,7 @@ html body {
 
 }
 
-#container {
+.container {
     height: 100%;
     width: 100%;
 }
@@ -27,7 +27,7 @@ html body {
 #posi_du_site {
     border-style: solid;
     text-align: left;
-    margin-top: 10px;
+    margin-top: 20px;
     padding: 5px;
     border-radius: 3px;
     border-width: 1px;
@@ -51,6 +51,17 @@ html body {
     padding-left: 5px;
 }
 
+#titrePanier{
+    float:right;
+    background-color: turquoise;
+    border-style: solid;
+    border-radius: 3px;
+    border-width: 1px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+
+
 
 #activités {
     height:100%;
@@ -68,4 +79,8 @@ html body {
     border-radius: 3px;
     border-width: 1px;
 
+}
+
+#partieDuHaut{
+    margin-bottom:20px;
 }

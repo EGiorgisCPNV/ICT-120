@@ -28,7 +28,7 @@ html body {
 #posi_du_site {
     border-style: solid;
     text-align: left;
-    margin-top: 10px;
+    margin-top: 20px;
     padding: 5px;
     border-radius: 3px;
     border-width: 1px;
@@ -48,7 +48,7 @@ html body {
 }
 
 #blockDuHaut {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 #blockDuBas {
