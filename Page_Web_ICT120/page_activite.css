@@ -4,10 +4,9 @@ html body {
 
 }
 
-.container {
+#container {
     height: 100%;
     width: 100%;
-
 }
 
 #bandoVE {
@@ -41,16 +40,7 @@ html body {
     border-top: solid #2e6da4 1px;
 }
 
-#activités {
-    padding-bottom: 120px;
-    padding-top: 90px;
-    padding-left: 25%;
-    margin-right:22%;
-    border-style: solid;
-    border-radius: 3px;
-    border-width: 1px;
 
-}
 
 #titreActivite{
     background-color: turquoise;
@@ -58,4 +48,24 @@ html body {
     border-radius: 3px;
     border-width: 1px;
     padding-bottom: 5px;
+    padding-left: 5px;
+}
+
+
+#activités {
+    height:100%;
+    border-style: solid;
+    border-radius: 3px;
+    border-width: 1px;
+
+}
+
+
+#panier {
+    height:200px;
+    float:right;
+    border-style: solid;
+    border-radius: 3px;
+    border-width: 1px;
+
 }
