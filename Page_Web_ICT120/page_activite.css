@@ -14,7 +14,7 @@ html body {
     border-width: 1px;
     text-align: center;
     margin-top: 15px;
-    padding: 10px;
+    padding-bottom: 10px;
     border-radius: 3px;
     background-color: turquoise;
 }
@@ -47,8 +47,8 @@ html body {
     border-style: solid;
     border-radius: 3px;
     border-width: 1px;
-    padding-bottom: 5px;
-    padding-left: 5px;
+    padding: 5px;
+
 }
 
 #titrePanier{
