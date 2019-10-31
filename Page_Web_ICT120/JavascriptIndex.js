@@ -57,7 +57,8 @@ function Verification(){
 
 }
 
-function myFunction() {
+//fonction pour pouvoir chercher dans la barre de recherche des éléments du tableau (NE FONCTIONNE PAS)
+function myFunction1() {
     var input, filter, table, tr, td, i, txtValue;
     input = document.getElementById("myInput");
     filter = input.value.toUpperCase();
@@ -75,3 +76,40 @@ function myFunction() {
         }
     }
 }
+
+//fonction pour créer une activiter
+function myFunction11() {
+    var table = document.getElementById("myTable");
+    var row = table.insertRow(0);
+    var cell1 = row.insertCell(0);
+    var a =document.createElement("td");
+
+    list1.appendChild(a);
+
+}
+
+function myFunction() {
+    var row = document.getElementById("lignePourUneActivitee"); // find row to copy
+    var table = document.getElementById("table"); // find table to append to
+    var clone = row.cloneNode(true); // copy children too
+    clone.id = "newID"; // change id or other attributes/contents
+    table.appendChild(clone); // add new row to end of table
+}
+
+//exporte les données sélectionnées
+var $table = $('#table');
+$(function () {
+    $('#toolbar').find('select').change(function () {
+        $table.bootstrapTable('refreshOptions', {
+            exportDataType: $(this).val()
+        });
+
+    });
+});
+
+var trBoldBlue = $("table");
+
+$(trBoldBlue).on("click", "tr", function () {
+    $(this).toggleClass("bold-blue");
+});
+//# sourceURL=pen.js
