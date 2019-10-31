@@ -29,7 +29,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Formulaire-Zone_De_Text_avec_mise_en_forme" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Page_Web_ICT120" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
@@ -64,6 +64,9 @@
       <workItem from="1570774234531" duration="865000" />
       <workItem from="1570775560678" duration="440000" />
       <workItem from="1570783975700" duration="2402000" />
+      <workItem from="1572441261232" duration="2000" />
+      <workItem from="1572510698518" duration="8000" />
+      <workItem from="1572513162354" duration="268000" />
     </task>
     <servers />
   </component>

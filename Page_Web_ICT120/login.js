@@ -16,9 +16,9 @@ function SwitchPass() {
 
 
 //fonction pour enrgistrer l'email et le mdp dans un fichier externe (mais elle ne marche pas)
-function Stockage(){
-    a=document.getElementById("mdp");
-    let rootDirEntry = fileEntry.filesystem.root;
+function Verification(){
 
-    FileSystemDirectoryEntrySync.createReader(rootDirEntry);
+    var a = document.getElementById(emailAStocker);
+
 }
+
