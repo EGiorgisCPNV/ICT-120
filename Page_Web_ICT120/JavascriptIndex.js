@@ -33,6 +33,27 @@ function Stockage(){
 
     window.location.replace("page_activité_avec_login.html");
 
+}
+
+
+
+//fonction qui verifie si l'email et le mdp si il correspond au compte register
+function Verification(){
+
+    var verificationLogin = localStorage.getItem("login");
+    var verificationMdp = localStorage.getItem("motDePasse");
+
+    var recupEmail= document.getElementById("email").value;
+    var recupMdp = document.getElementById("mdp").value;
+
+   if(verificationLogin == recupEmail && verificationMdp == recupMdp){
+       window.location.replace("page_activité_avec_login.html");
+   }
+   else {
+
+       alert('Error message: ' + "L'email ou le mot de passe est incorrect");
+       window.location.replace("login.html");
+   }
 
 }
 
