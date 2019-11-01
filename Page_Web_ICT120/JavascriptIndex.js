@@ -112,6 +112,7 @@ function Delete(){
 function CreatTableau(){
     var a=document.getElementById("e1").value;
 
+    elem.appendChild(document.createTextNode("ewr"));
 
-    document.write("<table><td></td></table>"+a);
+
 }
