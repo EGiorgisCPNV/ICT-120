@@ -79,7 +79,7 @@ function myFunction1() {
 
 //fonction pour créer une activiter
 function myFunction11() {
-    var table = document.getElementById("myTable");
+    var table = document.getElementById("table");
     var row = table.insertRow(0);
     var cell1 = row.insertCell(0);
     var a =document.createElement("td");
@@ -88,28 +88,30 @@ function myFunction11() {
 
 }
 
+//fonction qui ajouter une ligne au tr
 function myFunction() {
     var row = document.getElementById("lignePourUneActivitee"); // find row to copy
     var table = document.getElementById("table"); // find table to append to
     var clone = row.cloneNode(true); // copy children too
+
     clone.id = "newID"; // change id or other attributes/contents
     table.appendChild(clone); // add new row to end of table
+
+
 }
 
-//exporte les données sélectionnées
-var $table = $('#table');
-$(function () {
-    $('#toolbar').find('select').change(function () {
-        $table.bootstrapTable('refreshOptions', {
-            exportDataType: $(this).val()
-        });
 
-    });
-});
 
-var trBoldBlue = $("table");
+//fonction qui supprime une ligne
+function Delete(){
+    document.getElementById('lignePourUneActivitee').deleteRow(-1);
 
-$(trBoldBlue).on("click", "tr", function () {
-    $(this).toggleClass("bold-blue");
-});
-//# sourceURL=pen.js
+}
+
+//fonction qui genere un tableau
+function CreatTableau(){
+    var a=document.getElementById("e1").value;
+
+
+    document.write("<table><td></td></table>"+a);
+}

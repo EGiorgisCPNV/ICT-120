@@ -25,7 +25,6 @@
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 
-
 </head>
 <body>
 <div class="container">
@@ -77,35 +76,29 @@
 
             <div id="activités">
 
-                <table id="table" data-toggle="table" data-filter-control="true" data-click-to-select="true" data-toolbar="#toolbar">
-                    <thead>
-                    <tr>
-                        <th data-field="state" data-checkbox="true"></th>
-                        <th data-field="prenom" data-filter-control="input" data-sortable="true">Nom d'activité</th>
-                        <th data-filter-control="select" data-sortable="true">type</th>
-                        <th data-field="examen" data-filter-control="select" data-sortable="true">Cout total</th>
-                        <th data-field="note" data-sortable="true">Description</th>
-                    </tr>
-
-                    </thead>
-                    <tbody>
-                    <tr id="lignePourUneActivitee">
-                        <td class="bs-checkbox "><input data-index="0" name="btSelectItem" type="checkbox"></td>
-                        <td>Musee</td>
-                        <td>Sport</td>
-                        <td>1000.-</td>
-                        <td></td>
-                    </tr>
-
-                    </tbody>
-                </table>
+                <div class="form-row">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="First name" id="e1">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Last name">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Last name">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Last name">
+                    </div>
+                </div>
 
 
                 <div id="boutton">
-                    <button type="button" class="btn btn-primary btn-sm" id="btnAjouter" onclick="myFunction()">Ajouter
+                    <button type="button" class="btn btn-primary btn-sm" id="btnAjouter" onclick="CreatTableau()">Ajouter
                     </button>
                     <button type="button" class="btn btn-primary btn-sm" id="btnModifier">Modifier</button>
-                    <button type="button" class="btn btn-primary btn-sm" id="btnSupprimer">Supprimer</button>
+                    <button type="button" class="btn btn-primary btn-sm" id="btnSupprimer" onclick="Delete()">
+                        Supprimer
+                    </button>
                 </div>
             </div>
         </div>
@@ -114,24 +107,9 @@
 
 </div>
 
-<script id="rendered-js">
-    //exporte les données sélectionnées
-    var $table = $('#table');
-    $(function () {
-        $('#toolbar').find('select').change(function () {
-            $table.bootstrapTable('refreshOptions', {
-                exportDataType: $(this).val()
-            });
+</body>
+</html>
 
-        });
-    });
 
-    var trBoldBlue = $("table");
-
-    $(trBoldBlue).on("click", "tr", function () {
-        $(this).toggleClass("bold-blue");
-    });
-    //# sourceURL=pen.js
-</script>
-    </body>
-    </html>
+<!--aide : https://getbootstrap.com/docs/4.0/components/forms/-->
+<!-- aide : https://openclassrooms.com/forum/sujet/inserer-du-texte-dans-une-balise-html-avec-javascript-23570-->
