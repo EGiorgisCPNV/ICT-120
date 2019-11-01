@@ -76,32 +76,29 @@
 
             <div id="activités">
 
-<table>
-    <tr>
-        <td>
-            <div class="form-row">
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="First name" id="e1">
-                </div>
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="Last name">
-                </div>
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="Last name">
-                </div>
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="Last name">
-                </div>
-            </div>
-        </td>
-
-    </tr>
-</table>
-
+                <span class="row">
+                    <span class="col-lg-12 col-md-12">
+                <table id="myTable">
+                    <!-- ligne de base-->
+                    <tr>
+                        <td>Nom de l'activité<input type="text" value="" id="index0"></td>
+                        <td>Type<select id="index1">
+                            <option>Culture</option>
+                            <option>Loisir</option>
+                            <option>Repas en commun</option>
+                            <option>Sport</option>
+                        </select></td>
+                        <td>Prix<input type="text" value="" id="index2"></td>
+                        <td>Description<input type="text" value="" id="index3"></td>
+                    </tr>
+                </table>
+                        </span>
+                </span>
 
 
                 <div id="boutton">
-                    <button type="button" class="btn btn-primary btn-sm" id="btnAjouter" onclick="CreatTableau()">Ajouter
+                    <button type="button" class="btn btn-primary btn-sm" id="btnAjouter" onclick="CreatTableau()">
+                        Ajouter
                     </button>
                     <button type="button" class="btn btn-primary btn-sm" id="btnModifier">Modifier</button>
                     <button type="button" class="btn btn-primary btn-sm" id="btnSupprimer" onclick="Delete()">

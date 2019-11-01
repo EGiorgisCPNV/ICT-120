@@ -109,10 +109,39 @@ function Delete(){
 }
 
 //fonction qui genere un tableau
-function CreatTableau(){
-    var a=document.getElementById("e1").value;
+function CreatTableau1231233123(){
+    //prend la valeur du premier input
+    var a=document.getElementById("premierInput").value;
 
-    elem.appendChild(document.createTextNode("ewr"));
+    //cree un new input
+    var field = document.createElement("input");
+    field.type=text;
+    field.id="WESH";
+    field.name = field.id;
 
+    document.createElement('<input type="text" name="'+lenom+'" >')
 
 }
+
+
+//fonction qui genere un tableau
+function CreatTableau(){
+    var table = document.getElementById("myTable");
+    var row = table.insertRow(0);
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+    var cell3 = row.insertCell(2);
+    var cell4 = row.insertCell(3);
+
+    var valeurIndex0 =document.getElementById("index0").value;
+    var valeurIndex1 =document.getElementById("index1").value;
+    var valeurIndex2 =document.getElementById("index2").value;
+    var valeurIndex3 =document.getElementById("index3").value;
+
+    cell1.innerHTML = valeurIndex0;
+    cell2.innerHTML = valeurIndex1;
+    cell3.innerHTML = valeurIndex2;
+    cell4.innerHTML = valeurIndex3;
+
+}
+
