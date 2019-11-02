@@ -121,7 +121,6 @@ function CreatTableau() {
 }
 
 
-
 //fonction qui supprimme une ligne du dessus
 function Delete() {
     for(var i=0;i<1;i++){
@@ -145,4 +144,20 @@ function Login(){
 //fonction qui redirige sur la page d'accueil en étant login login
 function Register(){
     window.location.replace("register.html");
+}
+
+
+//fonction qui enrgistre les données dans un fichiers json
+
+
+
+
+//fonction qui va ouvrir le menu
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+//fonction qui va fermer le menu
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
 }

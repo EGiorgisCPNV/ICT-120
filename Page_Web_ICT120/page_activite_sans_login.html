@@ -20,6 +20,7 @@
 
 </head>
 <body>
+
 <div class="container">
 
     <!-- logo du cpnv-->
@@ -54,16 +55,12 @@
     <div class="row">
         <div class="col">
             <!-- Barre de recherche-->
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Recherche">
-                        <button type="button" class="btn btn-primary btn-sm" onkeyup="myFunction1()"
-                                id="bouttonRecherche">Rechercher
-                        </button>
-                    </div>
-                </div>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="login.html">login</a>
+                <a href="register.html">Register</a>
             </div>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
 
             <!--block de toutes les activitées-->
             <h3 id="titreActivite"><strong>Activités</strong></h3>
