@@ -17,45 +17,65 @@
 </body>
 <script>
 
+    //fonction pour tous
     function Tous(){
         chkb1.checked=true;
         chkb2.checked=true;
         chkb3.checked=true;
     }
 
+    //fonction pour aucun
     function Aucun(){
         chkb1.checked=false;
         chkb2.checked=false;
         chkb3.checked=false;
     }
 
-    function Inverser(){
+//fonction qui inverse
+    function Inverser() {
 
-        if(chkb1.checked){
-            chkb1.checked=false;
+        if (chkb1.checked===true && chkb2.checked === false && chkb3.checked === false) {
+            chkb1.checked = false;
+            chkb2.checked = true;
+            chkb3.checked = true
         }
-        else
-        if(chkb2.checked){
-            chkb2.checked=false;
+        else if (chkb2.checked && chkb1.checked === false && chkb3.checked === false) {
+            chkb1.checked = true;
+            chkb2.checked = false;
+            chkb3.checked = true;
         }
-        else
-        if(chkb3.checked){
-            chkb3.checked=false;
+        else if (chkb3.checked && chkb1.checked === false && chkb2.checked === false) {
+            chkb1.checked = true;
+            chkb2.checked = true;
+            chkb3.checked = false;
         }
-        else
-        if(chkb1.checked===false){
-            chkb1.checked=true;
+        else if (chkb1.checked === false && chkb2.checked === true && chkb3.checked === true) {
+            chkb1.checked = true;
+            chkb2.checked = false;
+            chkb3.checked = false;
         }
-        else
-        if(chkb2.checked===false){
-            chkb2.checked=true;
+        else if (chkb1.checked === true && chkb2.checked === false && chkb3.checked === true) {
+            chkb1.checked = false;
+            chkb2.checked = true;
+            chkb3.checked = false;
         }
-        else
-        if(chkb3.checked===false){
-            chkb3.checked=true;
+        else if (chkb1.checked === true && chkb2.checked === true && chkb3.checked === false) {
+            chkb1.checked = false;
+            chkb2.checked = true;
+            chkb3.checked = false;
         }
-
+        else if (chkb1.checked === false && chkb2.checked === false && chkb3.checked === false) {
+            chkb1.checked = true;
+            chkb2.checked = true;
+            chkb3.checked = true;
+        }
+        else if (chkb1.checked === true && chkb2.checked === true && chkb3.checked === true) {
+            chkb1.checked = false;
+            chkb2.checked = false;
+            chkb3.checked = false;
+        }
     }
+
 
 </script>
 </html>

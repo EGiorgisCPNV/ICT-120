@@ -120,7 +120,6 @@
 
 
 #bouttonRecherche{
-
     border-radius: 3px;
     border-width: 1px;
 }
@@ -134,3 +133,5 @@
     font-weight: bold;
     color: #0277BD;
 }
+
+btnDeconnection

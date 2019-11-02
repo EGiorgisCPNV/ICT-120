@@ -19,7 +19,7 @@
         <entry file="file://$PROJECT_DIR$/tesst.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="714">
-              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+              <caret line="42" selection-start-line="42" selection-end-line="42" />
               <folding>
                 <element signature="e#729#736#1" expanded="true" />
               </folding>
@@ -47,8 +47,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="404" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="338" />
+    <option name="y" value="-18" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -76,7 +77,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TraitementDeVariable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -104,16 +105,18 @@
       <workItem from="1570085995009" duration="3000" />
       <workItem from="1572628063051" duration="99000" />
       <workItem from="1572628302010" duration="1136000" />
+      <workItem from="1572681608085" duration="50000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1235000" />
+    <option name="totallyTimeSpent" value="1285000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="404" y="0" width="974" height="1047" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2549234" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12686567" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -177,7 +180,7 @@
     <entry file="file://$PROJECT_DIR$/tesst.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
           <folding>
             <element signature="e#729#736#1" expanded="true" />
           </folding>
