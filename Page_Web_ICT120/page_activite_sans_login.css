@@ -1,6 +1,4 @@
-body{
- tranp
-}
+
 .container {
     height: 100%;
     width: 100%;
@@ -71,7 +69,7 @@ body{
 
 
 #myInput {
-    background-image: url('/css/searchicon.png');
+
     background-position: 10px 10px;
     background-repeat: no-repeat;
     width: 100%;

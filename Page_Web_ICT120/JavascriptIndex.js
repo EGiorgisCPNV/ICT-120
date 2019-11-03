@@ -44,7 +44,7 @@ function Verification() {
     var recupEmail = document.getElementById("email").value;
     var recupMdp = document.getElementById("mdp").value;
 
-    if (verificationLogin == recupEmail && verificationMdp == recupMdp) {
+    if (verificationLogin === recupEmail && verificationMdp === recupMdp) {
         window.location.replace("page_activité_avec_login.html");
     } else {
 
@@ -54,36 +54,6 @@ function Verification() {
 
 }
 
-//fonction pour pouvoir chercher dans la barre de recherche des éléments du tableau (NE FONCTIONNE PAS)
-function Recherche() {
-    var input, filter, table, tr, td, i, txtValue;
-    input = document.getElementById("myInput");
-    filter = input.value.toUpperCase();
-    table = document.getElementById("myTable");
-    tr = table.getElementsByTagName("tr");
-    for (i = 0; i < tr.length; i++) {
-        td = tr[i].getElementsByTagName("td")[0];
-        if (td) {
-            txtValue = td.textContent || td.innerText;
-            if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                tr[i].style.display = "";
-            } else {
-                tr[i].style.display = "none";
-            }
-        }
-    }
-}
-
-//fonction pour créer une activiter
-function myFunction11() {
-    var table = document.getElementById("table");
-    var row = table.insertRow(0);
-    var cell1 = row.insertCell(0);
-    var a = document.createElement("td");
-
-    list1.appendChild(a);
-
-}
 
 
 //fonction qui crée une a chaque fois que l'on clique sur ajouter
@@ -100,13 +70,13 @@ function CreatTableau() {
     var cell7 = row.insertCell(6);
 
 
-    var valeurIndex0 =document.getElementById("index0").value;
-    var valeurIndex1 =document.getElementById("index1").value;
-    var valeurIndex2 =document.getElementById("index2").value;
-    var valeurIndex3 =document.getElementById("index3").value;
-    var valeurIndex4 =document.getElementById("index4").value;
-    var valeurIndex5 =document.getElementById("index5").value;
-    var valeurIndex6 =document.getElementById("index6").value;
+    var valeurIndex0 = document.getElementById("index0").value;
+    var valeurIndex1 = document.getElementById("index1").value;
+    var valeurIndex2 = document.getElementById("index2").value;
+    var valeurIndex3 = document.getElementById("index3").value;
+    var valeurIndex4 = document.getElementById("index4").value;
+    var valeurIndex5 = document.getElementById("index5").value;
+    var valeurIndex6 = document.getElementById("index6").value;
 
 
     cell1.innerHTML = valeurIndex0;
@@ -118,12 +88,20 @@ function CreatTableau() {
     cell7.innerHTML = valeurIndex6;
 
 
+    return valeurIndex4;
+}
+
+
+//fonction pour le prix total                       (NE FONCTIONNE PAS)
+function prixTotal(){
+
+    prixTotale.value= valeurIndex4.value;
 }
 
 
 //fonction qui supprimme une ligne du dessus
 function Delete() {
-    for(var i=0;i<1;i++){
+    for (var i = 0; i < 1; i++) {
         document.getElementById('myTable').deleteRow(i);
 
     }
@@ -131,25 +109,20 @@ function Delete() {
 
 
 //fonction qui redirige sur la page d'accueil sans etre login
-function Deconnection(){
+function Deconnection() {
     window.location.replace("page_activite_sans_login.html");
 }
 
 //fonction qui redirige sur la page d'accueil en étant login login
-function Login(){
+function Login() {
     window.location.replace("login.html");
 }
 
 
 //fonction qui redirige sur la page d'accueil en étant login login
-function Register(){
+function Register() {
     window.location.replace("register.html");
 }
-
-
-//fonction qui enrgistre les données dans un fichiers json
-
-
 
 
 //fonction qui va ouvrir le menu
@@ -161,3 +134,6 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
+
+
+
