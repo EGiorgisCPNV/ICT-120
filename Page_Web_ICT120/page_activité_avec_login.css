@@ -1,4 +1,11 @@
 
+body{
+
+    background: url(images/blue-mountains-colline-fond-d-ecran-1758641.jpg) center;
+    background-size: cover;
+    font-family: sans-serif;
+}
+
 .container {
     height: 100%;
     width: 100%;
@@ -171,4 +178,8 @@
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+}
+
+#btnAjouter{
+float:right;
 }

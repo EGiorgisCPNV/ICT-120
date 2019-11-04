@@ -1,9 +1,11 @@
 
-html body {
-    width: 100%;
-    height: 100%;
+body{
 
+    background: url(images/blue-mountains-colline-fond-d-ecran-1758641.jpg) center;
+    background-size: cover;
+    font-family: sans-serif;
 }
+
 
 .container {
     height: 100%;
@@ -18,7 +20,9 @@ html body {
     margin-top: 15px;
     padding-bottom: 10px;
     border-radius: 3px;
-    background-color: turquoise;
+    background: turquoise;
+
+
 }
 
 #logoCPNV {
@@ -51,6 +55,7 @@ html body {
 
 #blockDuMillieu{
     width:200px;
+
 }
 
 #blockDuBas {
@@ -61,7 +66,8 @@ html body {
     border-style: solid;
     border-radius: 3px;
     border-width: 1px;
-
+    background: rgba(1, 0, 0, 0.5);
+    color: #fff;
 }
 
 

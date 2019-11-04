@@ -1,4 +1,11 @@
 
+body{
+
+    background: url(images/blue-mountains-colline-fond-d-ecran-1758641.jpg) center;
+    background-size: cover;
+    font-family: sans-serif;
+}
+
 .container {
     height: 100%;
     width: 100%;
@@ -12,10 +19,7 @@
     padding-bottom: 10px;
     border-radius: 3px;
     background-color: turquoise;
-
 }
-
-
 
 #logoCPNV {
     margin-top: 15px;
@@ -69,7 +73,7 @@
 
 
 #myInput {
-
+    background-image: url('/css/searchicon.png');
     background-position: 10px 10px;
     background-repeat: no-repeat;
     width: 100%;
@@ -123,7 +127,6 @@
 
 
 #bouttonRecherche{
-
     border-radius: 3px;
     border-width: 1px;
 }
@@ -137,7 +140,6 @@
     font-weight: bold;
     color: #0277BD;
 }
-
 
 .sidenav {
     height: 100%;
@@ -176,4 +178,8 @@
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+}
+
+#btnAjouter{
+    float:right;
 }

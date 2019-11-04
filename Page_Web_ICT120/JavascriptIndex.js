@@ -55,7 +55,6 @@ function Verification() {
 }
 
 
-
 //fonction qui crée une a chaque fois que l'on clique sur ajouter
 function CreatTableau() {
     var table = document.getElementById("myTable");
@@ -88,7 +87,6 @@ function CreatTableau() {
     cell7.innerHTML = valeurIndex6;
 
 
-    return valeurIndex4;
 }
 
 
