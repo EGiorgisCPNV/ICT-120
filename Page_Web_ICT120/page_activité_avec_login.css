@@ -60,6 +60,8 @@ body{
     border-radius: 3px;
     border-width: 1px;
 
+    background: rgba(1, 0, 0, 0.5);
+    color: #ffffff;
 }
 
 
@@ -73,7 +75,6 @@ body{
 
 
 #myInput {
-    background-image: url('/css/searchicon.png');
     background-position: 10px 10px;
     background-repeat: no-repeat;
     width: 100%;
@@ -88,6 +89,7 @@ body{
     width: 100%;
     border: 1px solid #ddd;
     font-size: 18px;
+    color: #ffffff;
 }
 
 #myTable th, #myTable td {
@@ -180,6 +182,6 @@ body{
     .sidenav a {font-size: 18px;}
 }
 
-#btnAjouter{
-float:right;
+#activité{
+
 }
