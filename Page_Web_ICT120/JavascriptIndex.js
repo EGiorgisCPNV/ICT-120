@@ -3,7 +3,7 @@ function SwitchPass() {
     var typeInput = document.getElementById('mdp');
     var txtHREF = document.getElementById('oeil');
 
-    if (typeInput.type == 'password') {
+    if (typeInput.type === 'password') {
         typeInput.type = 'text';
         document.getElementById("oeil").className = "glyphicon glyphicon-eye-close";
     } else {
@@ -57,6 +57,7 @@ function Verification() {
 
 //fonction qui crée une a chaque fois que l'on clique sur ajouter
 function CreatTableau() {
+
     var table = document.getElementById("myTable");
 
     var row = table.insertRow(0);
@@ -105,22 +106,6 @@ function Delete() {
     }
 }
 
-
-//fonction qui redirige sur la page d'accueil sans etre login
-function Deconnection() {
-    window.location.replace("page_activite_sans_login.html");
-}
-
-//fonction qui redirige sur la page d'accueil en étant login login
-function Login() {
-    window.location.replace("login.html");
-}
-
-
-//fonction qui redirige sur la page d'accueil en étant login login
-function Register() {
-    window.location.replace("register.html");
-}
 
 
 //fonction qui va ouvrir le menu

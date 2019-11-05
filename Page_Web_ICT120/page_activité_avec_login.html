@@ -39,7 +39,6 @@
                 <h3><strong>Voyage d'étude</strong></h3>
             </div>
 
-
             <!--Fil d'arianne-->
             <div class="col-lg-12 col-md-12 col-sm-12 " id="filDarianne">
                 <a href="page_activite_sans_login.html">Accueil </a> >
@@ -64,14 +63,13 @@
             </div>
 
 
-
-
             <!--block de toutes les activitées-->
             <h3 id="titreActivite"><strong>Activités</strong></h3>
 
             <div id="activités">
-                <div class="table-responsive">
-                    <form action="index.php" method="post">
+                <form action="index.php" method="post">
+                    <div class="table-responsive">
+
                         <table id="myTable">
                             <!-- ligne de base-->
                             <tr>
@@ -85,16 +83,19 @@
                                 </td>
                                 <td>Adresse<input type="text" value="" id="index2" name="Adresse"></td>
                                 <td>Date/Heure activité<input type="date" value="" id="index3" name="Date"></td>
-                                <td>Prix<input type="number" value="" id="index4" name="Prix" ></td>
+                                <td>Prix<input type="number" value="" id="index4" name="Prix"></td>
                                 <td>Liens utiles<input type="url" value="" id="index5" name="LU"></td>
                                 <td>Lieu et heure de rdv<input type="text" value="" id="index6" name="Lieu"></td>
                             </tr>
                         </table>
-                        <input type="submit" value="ajouter" class="btn btn-primary btn-sm" id="btnAjouter" onclick="CreatTableau()">
-                        <input type="submit" value="supprimer" class="btn btn-primary btn-sm" id="btnSupprimer" onclick="Delete()">
-                    </form>
+                    </div>
+                    <input type="submit" value="Ajouter" class="btn btn-primary btn-sm" id="btnAjouter"
+                           onclick="CreatTableau()">
+                    <input type="submit" value="Modifier" class="btn btn-primary btn-sm" id="btnModifier">
+                    <input type="submit" value="Supprimer" class="btn btn-primary btn-sm" id="btnSupprimer"
+                           onclick="Delete()">
+                </form>
 
-                </div>
             </div>
 
         </div>

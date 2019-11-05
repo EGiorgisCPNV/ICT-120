@@ -55,11 +55,9 @@ body{
 
 
 #activités {
-    height:100%;
-    border-style: solid;
+    border-style: solid ;
     border-radius: 3px;
     border-width: 1px;
-
     background: rgba(1, 0, 0, 0.5);
     color: #ffffff;
 }
@@ -101,11 +99,6 @@ body{
     border-bottom: 1px solid #ddd;
 }
 
-#myTable tr.header, #myTable tr:hover {
-    background-color: #f1f1f1;
-}
-
-
 
 #filtre {
     border-collapse: collapse;
@@ -131,11 +124,6 @@ body{
 #bouttonRecherche{
     border-radius: 3px;
     border-width: 1px;
-}
-
-#boutton{
-    margin:auto;
-    vertical-align: center;
 }
 
 .bold-blue {
@@ -182,6 +170,39 @@ body{
     .sidenav a {font-size: 18px;}
 }
 
-#activité{
 
+#index0{
+    color: #000000;
+}
+#index1{
+    color: #000000;
+}
+#index2{
+    color: #000000;
+}
+#index3{
+    color: #000000;
+}
+#index4{
+    color: #000000;
+}
+#index5{
+    color: #000000;
+}
+#index6{
+    color: #000000;
+}
+
+#btnAjouter{
+    position:fixed;
+}
+
+#btnModifier{
+    position:fixed;
+    margin-left:65px;
+}
+
+#btnSupprimer{
+    position:fixed;
+    margin-left:133px;
 }

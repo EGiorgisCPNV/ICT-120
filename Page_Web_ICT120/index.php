@@ -16,6 +16,9 @@ $lieu=$_POST["Lieu"];
 //$tempArray=json_decode($takeContentBack, true);
 
 
+//tableau qui enregistre les prix
+
+
 //tableau qui enrgistre les différent élément indiqué
 $dataArray= array('nom' => $nom,
     'adresse' => $adresse,
@@ -29,6 +32,7 @@ $dataArray=json_encode($dataArray, true);
 
 //inscrit dans le fichier json le tableau
 file_put_contents('tsconfig.json', $dataArray);
+
 
 header ("location:http://localhost:63342/Page_Web_ICT120/page_activit%C3%A9_avec_login.html");
 exit();

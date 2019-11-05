@@ -36,7 +36,6 @@ body{
     background-color: turquoise;
 }
 
-
 #titre {
     border-left: solid #2e6da4 1px;
     border-top: solid #2e6da4 1px;
@@ -100,11 +99,6 @@ body{
 #myTable tr {
     border-bottom: 1px solid #ddd;
 }
-
-#myTable tr.header, #myTable tr:hover {
-    background-color: #f1f1f1;
-}
-
 
 
 #filtre {
@@ -182,6 +176,42 @@ body{
     .sidenav a {font-size: 18px;}
 }
 
-#activité{
+#index0{
+    color: #000000;
+}
+#index1{
+    color: #000000;
+}
+#index2{
+    color: #000000;
+}
+#index3{
+    color: #000000;
+}
+#index4{
+    color: #000000;
+}
+#index5{
+    color: #000000;
+}
+#index6{
+    color: #000000;
+}
 
+#btnAjouter{
+    position:fixed;
+    margin-top:15px;
+}
+
+#btnModifier{
+    position:fixed;
+    margin-left:65px;
+    margin-top:15px;
+
+}
+
+#btnSupprimer{
+    position:fixed;
+    margin-left:133px;
+    margin-top:15px;
 }
