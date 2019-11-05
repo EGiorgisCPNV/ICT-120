@@ -195,14 +195,17 @@ body{
 
 #btnAjouter{
     position:fixed;
+    margin-top: 3px;
 }
 
 #btnModifier{
     position:fixed;
     margin-left:65px;
+    margin-top: 3px;
 }
 
 #btnSupprimer{
     position:fixed;
     margin-left:133px;
+    margin-top: 3px;
 }

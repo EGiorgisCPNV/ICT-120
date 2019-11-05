@@ -66,36 +66,37 @@
             <!--block de toutes les activitées-->
             <h3 id="titreActivite"><strong>Activités</strong></h3>
 
+
             <div id="activités">
-                <form action="index.php" method="post">
-                    <div class="table-responsive">
+                <div class="table-responsive">
 
-                        <table id="myTable">
-                            <!-- ligne de base-->
-                            <tr>
-                                <td>Nom de l'activité<input type="text" name="Nom" value="" id="index0"></td>
-                                <td>Type<select id="index1">
-                                    <option>Culture</option>
-                                    <option>Loisir</option>
-                                    <option>Repas en commun</option>
-                                    <option>Sport</option>
-                                </select>
-                                </td>
-                                <td>Adresse<input type="text" value="" id="index2" name="Adresse"></td>
-                                <td>Date/Heure activité<input type="date" value="" id="index3" name="Date"></td>
-                                <td>Prix<input type="number" value="" id="index4" name="Prix"></td>
-                                <td>Liens utiles<input type="url" value="" id="index5" name="LU"></td>
-                                <td>Lieu et heure de rdv<input type="text" value="" id="index6" name="Lieu"></td>
-                            </tr>
-                        </table>
-                    </div>
-                    <input type="submit" value="Ajouter" class="btn btn-primary btn-sm" id="btnAjouter"
-                           onclick="CreatTableau()">
-                    <input type="submit" value="Modifier" class="btn btn-primary btn-sm" id="btnModifier">
-                    <input type="submit" value="Supprimer" class="btn btn-primary btn-sm" id="btnSupprimer"
-                           onclick="Delete()">
-                </form>
+                    <table id="myTable">
+                        <!-- ligne de base-->
+                        <tr>
+                            <td>Nom de l'activité<input type="text" name="Nom" value="" id="index0"></td>
+                            <td>Type<select id="index1">
+                                <option>Culture</option>
+                                <option>Loisir</option>
+                                <option>Repas en commun</option>
+                                <option>Sport</option>
+                            </select>
+                            </td>
+                            <td>Adresse<input type="text" value="" id="index2" name="Adresse"></td>
+                            <td>Date/Heure activité<input type="date" value="" id="index3" name="Date"></td>
+                            <td>Prix<input type="number" value="" id="index4" name="Prix"></td>
+                            <td>Liens utiles<input type="url" value="" id="index5" name="LU"></td>
+                            <td>Lieu et heure de rdv<input type="text" value="" id="index6" name="Lieu"></td>
+                        </tr>
+                    </table>
 
+                </div>
+                <button value="ajouter" class="btn btn-primary btn-sm" id="btnAjouter" onclick="CreatTableau()">
+                    Ajouter
+                </button>
+                <button value="modifier" class="btn btn-primary btn-sm" id="btnModifier">Modifier</button>
+                <button value="supprimer" class="btn btn-primary btn-sm" id="btnSupprimer" onclick="Delete()">
+                    Supprimer
+                </button>
             </div>
 
         </div>
