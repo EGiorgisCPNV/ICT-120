@@ -4,40 +4,23 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" type="text/css" href="ads.css">
+    <script type="text/javascript" src="index.js"></script>
 </head>
 <body>
-<!--Navbar-->
-<nav class="navbar navbar-light navbar-1 white">
-
-    <!-- Navbar brand -->
-    <a class="navbar-brand" href="#">Navbar</a>
-
-    <!-- Collapse button -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15"
-            aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent15">
-
-        <!-- Links -->
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-            </li>
-        </ul>
-        <!-- Links -->
-
-    </div>
-    <!-- Collapsible content -->
-
-</nav>
-<!--/.Navbar-->
+<form name="bibi">
+    <table border=1>
+        <tr>
+            <td>Produits</td><td>Quantité</td><td>Prix Unitaire</td><td>Total</td>
+        </tr>
+        <tr>
+            <td>ACIDAC 300MG B/14 CP</td><td>2</td><td>83050</td><td><input type='text' id="montant" value='166100'></td>
+        </tr>
+        <tr>
+            <td>Artequin 600/750 AD CP</td><td>3</td><td>78400</td><td><input type='text' id="montant" value='235200'></td>
+        </tr>
+    </table>
+</form>
+Montant total :<input type="text" id="montanttotal" onClick="calculTotal();">
 </body>
 
 </html>

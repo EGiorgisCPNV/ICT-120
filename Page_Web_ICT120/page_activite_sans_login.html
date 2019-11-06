@@ -1,5 +1,5 @@
 <!--Auteur:Esteban Giorgis-->
-<!--Titre:Page d'activité de mon site web-->
+<!--Titre:Page d'activité en étant pas login de mon site web-->
 <!--date:15.10.2019-->
 <!--Version:1.0-->
 
@@ -8,7 +8,7 @@
 <head>
 
     <meta charset="UTF-8">
-    <title>Page d'activités</title>
+    <title>Page d'activités sans login</title>
 
     <!--lien pour le css, bootstrap et le javascript-->
     <link rel="stylesheet" type="text/css" href="page_activite_sans_login.css">
@@ -28,7 +28,7 @@
     <!-- logo du cpnv-->
     <div class="row" id="partieDuHaut">
         <div class="col-lg-3 col-md-4 col-sm-6 " id="logoCPNV">
-            <a href="page_activite_sans_login.html">
+
                 <img src="images/logo Cpnv.png" alt="logoCpnv">
             </a>
         </div>
@@ -64,12 +64,20 @@
             </div>
 
 
+
             <!--block de toutes les activitées-->
             <h3 id="titreActivite"><strong>Activités</strong></h3>
 
             <div id="activités">
+                <!-- boutton d'action-->
+                <button value="ajouter" class="btn btn-primary btn-sm" id="btnAjouter" onclick="Ajouter()">
+                    Ajouter
+                </button>
+                <button value="supprimer" class="btn btn-primary btn-sm" id="btnSupprimer" onclick="Delete()">
+                    Supprimer
+                </button>
                 <div class="table-responsive">
-
+                    <!--La table-->
                     <table id="myTable">
                         <!-- ligne de base-->
                         <tr>
@@ -87,16 +95,10 @@
                             <td>Liens utiles<input type="url" value="" id="index5" name="LU"></td>
                             <td>Lieu et heure de rdv<input type="text" value="" id="index6" name="Lieu"></td>
                         </tr>
+                        <!-- fin de la ligne de base-->
                     </table>
-
                 </div>
-                <button value="ajouter" class="btn btn-primary btn-sm" id="btnAjouter" onclick="CreatTableau()">
-                    Ajouter
-                </button>
-                <button value="modifier" class="btn btn-primary btn-sm" id="btnModifier">Modifier</button>
-                <button value="supprimer" class="btn btn-primary btn-sm" id="btnSupprimer" onclick="Delete()">
-                    Supprimer
-                </button>
+
             </div>
 
         </div>

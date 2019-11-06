@@ -89,6 +89,7 @@ body{
     border: 1px solid #ddd;
     font-size: 18px;
     color: #ffffff;
+    margin-top:35px;
 }
 
 #myTable th, #myTable td {
@@ -201,16 +202,11 @@ body{
 #btnAjouter{
     position:fixed;
     margin-top: 3px;
-}
-
-#btnModifier{
-    position:fixed;
-    margin-left:65px;
-    margin-top: 3px;
+    margin-left: 3px;
 }
 
 #btnSupprimer{
     position:fixed;
-    margin-left:133px;
+    margin-left:68px;
     margin-top: 3px;
 }

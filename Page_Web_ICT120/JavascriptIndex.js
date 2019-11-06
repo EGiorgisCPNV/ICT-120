@@ -56,7 +56,7 @@ function Verification() {
 
 
 //fonction qui crée une a chaque fois que l'on clique sur ajouter
-function CreatTableau() {
+function Ajouter() {
 
     var table = document.getElementById("myTable");
 
@@ -91,7 +91,7 @@ function CreatTableau() {
 }
 
 
-//fonction pour le prix total                       (NE FONCTIONNE PAS)
+//fonction pour le prix total (NE FONCTIONNE PAS)
 function prixTotal(){
 
     prixTotale.value= valeurIndex4.value;
@@ -107,7 +107,6 @@ function Delete() {
 }
 
 
-
 //fonction qui va ouvrir le menu
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
@@ -119,4 +118,13 @@ function closeNav() {
 }
 
 
+//fonction pour le filtre (NE FONCTIONNE PAS)
+function filtre() {
+    var a=document.getElementById("ListeDeroulante").value;
 
+
+if(a.value==="Culture"){
+    alert("asidhb");
+}
+
+}
