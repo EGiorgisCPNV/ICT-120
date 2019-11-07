@@ -176,3 +176,29 @@ function filtreType() {
 }
 
 
+//fonction qui change les couleurs du bando, fil d'arianne etc... (FONCTIONNEL)
+function changerCouleurBlanc(){
+
+    var element=document.getElementById("bandoVE");
+    var element1=document.getElementById("filDarianne");
+    var element2=document.getElementById("titreActivite");
+
+
+    element.style.backgroundColor="#ffffff";
+    element1.style.backgroundColor="#ffffff";
+    element2.style.backgroundColor="#ffffff";
+}
+
+
+//fonction qui change les couleurs du bando, fil d'arianne etc... (FONCTIONNEL)
+function changerCouleurTurquoise(){
+
+    var element=document.getElementById("bandoVE");
+    var element1=document.getElementById("filDarianne");
+    var element2=document.getElementById("titreActivite");
+
+
+    element.style.backgroundColor="turquoise";
+    element1.style.backgroundColor="turquoise";
+    element2.style.backgroundColor="turquoise";
+}
