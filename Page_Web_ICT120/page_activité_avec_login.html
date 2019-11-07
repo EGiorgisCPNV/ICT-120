@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 </head>
-<body onload="abc()">
+<body>
 
 
 <div class="container">
@@ -65,8 +65,12 @@
             <!--block de toutes les activitées-->
             <h3 id="titreActivite"><strong>Activités</strong></h3>
 
+            <!--barre de recherche par type-->
+            <input type="select" id="barreRechercheType" onkeyup="filtreType()" placeholder="Rechercher par Type">
+
 
             <div id="activités">
+                <!-- tous mes bouttons-->
                 <button value="ajouter" class="btn btn-primary btn-sm" id="btnAjouter" onclick="Ajouter()">
                     Ajouter
                 </button>

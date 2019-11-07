@@ -1,4 +1,4 @@
-//fonction qui permet d'afficher le mot de passe
+//fonction qui permet d'afficher le mot de passe (FONCTIONNEL)
 function SwitchPass() {
     var typeInput = document.getElementById('mdp');
     var txtHREF = document.getElementById('oeil');
@@ -14,7 +14,29 @@ function SwitchPass() {
 }
 
 
-//fonction qui verifie si l'email et le mdp si il correspond au compte register
+//fonction pour enrgistrer l'email et le mdp dans un fichier externe (FONCTIONNEL)
+function Stockage() {
+
+    var emailAStocker = document.getElementById("email").value;
+
+    var mdpAStocker = document.getElementById("mdp").value;
+
+    // Sauvegarder les informations dans l’espace local courant
+    localStorage.setItem("login", emailAStocker);
+
+    // Sauvegarder les informations dans l’espace local courant
+    localStorage.setItem("motDePasse", mdpAStocker);
+
+    // Accéder à des données enregistrées
+    //alert("login = " + localStorage.getItem("login") + "\n" + "mot de passe = "+ localStorage.getItem("motDePasse"));
+
+    window.location.replace("page_activité_avec_login.html");
+
+}
+
+
+
+//fonction qui verifie si l'email et le mdp si il correspond au compte register(FONCTIONNEL)
 function Verification() {
 
     var verificationLogin = localStorage.getItem("login");
@@ -34,7 +56,7 @@ function Verification() {
 }
 
 
-//fonction qui crée une a chaque fois que l'on clique sur ajouter
+//fonction qui crée une a chaque fois que l'on clique sur ajouter (FONCTIONNEL)
 function Ajouter() {
 
     var table = document.getElementById("myTable");
@@ -65,16 +87,12 @@ function Ajouter() {
     cell5.innerHTML = valeurIndex4;
     cell6.innerHTML = valeurIndex5;
     cell7.innerHTML = valeurIndex6;
-    
+
 }
 
 
-//
+//fonction pour restaurer les valeur qui'il y a dans un localstorage (NON FONCTIONNEL)
 function abc() {
-
-    var table = document.getElementById("myTable");
-    var row = table.insertRow(0);
-
     var valeurIndex0 = document.getElementById("index0").value;
     var valeurIndex1 = document.getElementById("index1").value;
     var valeurIndex2 = document.getElementById("index2").value;
@@ -83,80 +101,71 @@ function abc() {
     var valeurIndex5 = document.getElementById("index5").value;
     var valeurIndex6 = document.getElementById("index6").value;
 
+     var tableau=[valeurIndex0.value,valeurIndex1.value,valeurIndex2.value,valeurIndex3.value,valeurIndex4.value,valeurIndex5.value,valeurIndex6.value];
 
-    var tableau = [valeurIndex0, valeurIndex1, valeurIndex2, valeurIndex3, valeurIndex4, valeurIndex5, valeurIndex6];
 
-    // Sauvegarder les informations dans l’espace local courant
-    localStorage.setItem("Tableau", tableau);
 
-    var z = localStorage.getItem("Tableau");
-    cell1.innerHTML = z[0];
+    window.localStorage.setItem("TableauStocker", tableau[1]);
+    var a=localStorage.getItem("TableauStocker");
 
+    for(var i=0;i<50;i++){
+
+        alert(a[i]);
+    }
 
 }
 
-//fonction pour le prix total (NE FONCTIONNE PAS)
+
+//fonction pour le prix total (NON FONCTIONNEL)
 function prixTotal() {
 
 
 }
 
 
-//fonction qui supprimme une ligne du dessus
+//fonction qui supprimme une ligne du dessus (FONCTIONNEL)
 function Delete() {
     for (var i = 0; i < 1; i++) {
         document.getElementById('myTable').deleteRow(i);
-
     }
 }
 
 
-//fonction qui va ouvrir le menu
+//fonction qui va ouvrir le menu (FONCTIONNEL)
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
 }
 
-//fonction qui va fermer le menu
+//fonction qui va fermer le menu(FONCTIONNEL)
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
 
 
-//fonction pour le filtre (NE FONCTIONNE PAS)
-function filtre() {
-    var a = document.getElementById("ListeDeroulante").value;
 
 
-    if (a.value === "Culture") {
-        alert("asidhb");
+
+
+//fonction pour rechercher par type (FONCTIONNEL)
+function filtreType() {
+
+    var input, filter, table, tr, td, i, txtValue;
+    input = document.getElementById("barreRechercheType");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("myTable");
+    tr = table.getElementsByTagName("tr");
+
+//boucle qui vérifie chaque row
+    for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[1];
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+            } else {
+                tr[i].style.display = "none";
+            }
+
     }
-
 }
 
 
-//fonction pour enrgistrer l'email et le mdp dans un fichier externe (mais elle ne marche pas)
-function Stockage() {
-
-    var emailAStocker = document.getElementById("email").value;
-
-    var mdpAStocker = document.getElementById("mdp").value;
-
-    // Sauvegarder les informations dans l’espace local courant
-    localStorage.setItem("login", emailAStocker);
-
-    // Sauvegarder les informations dans l’espace local courant
-    localStorage.setItem("motDePasse", mdpAStocker);
-
-    // Accéder à des données enregistrées
-    //alert("login = " + localStorage.getItem("login") + "\n" + "mot de passe = "+ localStorage.getItem("motDePasse"));
-
-    window.location.replace("page_activité_avec_login.html");
-
-}
-
-
-//fonction pour enrgistrer mon tableau dans un localstorage
-function enrgistrerTableau() {
-
-
-}

@@ -36,7 +36,6 @@ body{
     background-color: turquoise;
 }
 
-
 #titre {
     border-left: solid #2e6da4 1px;
     border-top: solid #2e6da4 1px;
@@ -55,9 +54,11 @@ body{
 
 
 #activités {
-    border-style: solid ;
+    height:100%;
+    border-style: solid;
     border-radius: 3px;
     border-width: 1px;
+
     background: rgba(1, 0, 0, 0.5);
     color: #ffffff;
 }
@@ -72,14 +73,15 @@ body{
 }
 
 
-#myInput {
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
+#barreRechercheType {
+    border-style: solid;
+    border-radius: 3px;
+    border-width: 1px;
     width: 100%;
-    font-size: 16px;
-    padding: 12px 20px 12px 40px;
-    border: 1px solid #ddd;
+    padding: 12px;
     margin-bottom: 12px;
+    background: rgba(1, 0, 0, 0.5);
+    color: #ffffff;
 }
 
 #myTable {
@@ -127,6 +129,11 @@ body{
     border-width: 1px;
 }
 
+#boutton{
+    margin:auto;
+    vertical-align: center;
+}
+
 .bold-blue {
     font-weight: bold;
     color: #0277BD;
@@ -171,7 +178,6 @@ body{
     .sidenav a {font-size: 18px;}
 }
 
-
 #index0{
     color: #000000;
 }
@@ -203,5 +209,11 @@ body{
 #btnSupprimer{
     position:fixed;
     margin-left:68px;
+    margin-top: 3px;
+}
+
+#btnEnrgistrer{
+    position:fixed;
+    margin-left:150px;
     margin-top: 3px;
 }

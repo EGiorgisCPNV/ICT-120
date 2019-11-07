@@ -8,7 +8,7 @@
 <head>
 
     <meta charset="UTF-8">
-    <title>Page d'activités sans login</title>
+    <title>Page d'activités avec login</title>
 
     <!--lien pour le css, bootstrap et le javascript-->
     <link rel="stylesheet" type="text/css" href="page_activite_sans_login.css">
@@ -28,8 +28,7 @@
     <!-- logo du cpnv-->
     <div class="row" id="partieDuHaut">
         <div class="col-lg-3 col-md-4 col-sm-6 " id="logoCPNV">
-
-                <img src="images/logo Cpnv.png" alt="logoCpnv">
+            <img src="images/logo Cpnv.png" alt="logoCpnv">
             </a>
         </div>
 
@@ -56,26 +55,30 @@
                 <div class="col-lg-12">
                     <div id="mySidenav" class="sidenav">
                         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                        <a href="login.html">login</a>
-                        <a href="register.html">Register</a>
+                        <a href="page_activite_sans_login.html">Déconnection</a>
                     </div>
                     <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
                 </div>
             </div>
 
 
-
             <!--block de toutes les activitées-->
             <h3 id="titreActivite"><strong>Activités</strong></h3>
 
+            <!--barre de recherche par type-->
+            <input type="select" id="barreRechercheType" onkeyup="filtreType()" placeholder="Rechercher par Type">
+
+
             <div id="activités">
-                <!-- boutton d'action-->
+                <!-- tous mes bouttons-->
                 <button value="ajouter" class="btn btn-primary btn-sm" id="btnAjouter" onclick="Ajouter()">
                     Ajouter
                 </button>
                 <button value="supprimer" class="btn btn-primary btn-sm" id="btnSupprimer" onclick="Delete()">
                     Supprimer
                 </button>
+
+
                 <div class="table-responsive">
                     <!--La table-->
                     <table id="myTable">
@@ -95,8 +98,8 @@
                             <td>Liens utiles<input type="url" value="" id="index5" name="LU"></td>
                             <td>Lieu et heure de rdv<input type="text" value="" id="index6" name="Lieu"></td>
                         </tr>
-                        <!-- fin de la ligne de base-->
                     </table>
+
                 </div>
 
             </div>

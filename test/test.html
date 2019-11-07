@@ -1,74 +1,162 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>un</title>
-    <script type='text/javascript'>
-        function  createCSV(obj){
-            var tab=document.getElementById(obj);
-            var Tablignes =tab.getElementsByTagName('tr');
-
-            var CSVText="";
-            var x=0;
-
-            while(Tablignes[x]){
-                TabCol=Tablignes[x].getElementsByTagName('td');
-                var ArrLine=new Array();
-                var y=0;
-                while (TabCol[y]){
-                    ArrLine.push(TabCol[y].innerHTML+';');
-                    y++;
-                }
-                CSVText+=ArrLine.join('\t')+'\n';
-                x++;
-            }
-            document.getElementById("csvText").value=CSVText;
-            document.forms[0].submit();
-        }
-
-    </script>
+    <title>Table V04</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="page.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-
 <body>
+<div class="limiter">
+    <div class="container-table100">
+        <div class="wrap-table100">
+            <div class="table100 ver1 m-b-110">
+                <div class="table100-head">
+                    <button onclick="filtrerVille(this);" data-ville="Paris">Topics in Paris</button>
+                    <button onclick="filtrerVille(this);" data-ville="Toulouse">Topics in Toulouse</button>
+                    <button onclick="filtrerVille(this);" data-ville="Berlin">Topics in Berlin</button>
+                    <table>
+                        <thead>
+                        <tr class="row100 head">
+                            <th class="cell100 column1">Topics</th>
+                            <th class="cell100 column2">Site</th>
+                            <th class="cell100 column3">Hours</th>
+                            <th class="cell100 column4">Places</th>
+                            <th class="cell100 column5">Register</th>
+                            <th class="cell100 column6">Room</th>
+                            <th class="cell100 column7">Contact</th>
+                        </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div class="table100-body js-pscroll">
+                    <table>
+                        <tbody>
+                        <tr data-ville="Paris"class="row100 body">
+                            <td class="cell100 column1">Workshop in a box with telecom team</td>
+                            <td class="cell100 column2">Paris</td>
+                            <td class="cell100 column3">10:30 - 12:00</td>
+                            <td class="cell100 column4">-</td>
+                            <td class="cell100 column5">Soon</td>
+                            <td class="cell100 column6">Viewing Gallery</td>
+                            <td class="cell100 column7"></td>
+                        </tr>
 
-<table id="tableau" border="1" width="100%">
-    <tr>
-        <td width="20%">un </td>
-        <td width="20%">deux</td>
-        <td width="20%">trois</td>
-        <td width="20%">quatre</td>
-        <td width="20%">cinq</td>
-    </tr>
-    <tr>
-        <td width="20%">1</td>
-        <td width="20%">2</td>
-        <td width="20%">3</td>
-        <td width="20%">4</td>
-        <td width="20%">5</td>
-    </tr>
-    <tr>
-        <td width="20%">un </td>
-        <td width="20%">deux</td>
-        <td width="20%">trois</td>
-        <td width="20%">quatre</td>
-        <td width="20%">cinq</td>
-    </tr>
-    <tr>
-        <td width="20%">1</td>
-        <td width="20%">2</td>
-        <td width="20%">3</td>
-        <td width="20%">4</td>
-        <td width="20%">5</td>
-    </tr>
-</table>
+                        <tr data-ville="Paris"class="row100 body">
+                            <td class="cell100 column1">Finance Market Place</td>
+                            <td class="cell100 column2">Paris</td>
+                            <td class="cell100 column3">13:00 - 14:30</td>
+                            <td class="cell100 column4">-</td>
+                            <td class="cell100 column5">Soon</td>
+                            <td class="cell100 column6">Viewing Gallery</td>
+                            <td class="cell100 column7">Pierre</td>
+                        </tr>
 
-<p>
-    <button onclick="createCSV('tableau')">EXPORTER en CSV</button>
-</p>
+                        <tr data-ville="Toulouse"class="row100 body">
+                            <td class="cell100 column1">Brainstorming solutions oriented within telecom team</td>
+                            <td class="cell100 column2">Toulouse</td>
+                            <td class="cell100 column3">Afternoon</td>
+                            <td class="cell100 column4">-</td>
+                            <td class="cell100 column5">Soon</td>
+                            <td class="cell100 column6">No room</td>
+                            <td class="cell100 column7">-</td>
+                        </tr>
+                        <tr data-ville="Toulouse"class="row100 body">
+                            <td class="cell100 column1">Culture Kit + Values</td>
+                            <td class="cell100 column2">Toulouse</td>
+                            <td class="cell100 column3">13:00 - 13:45</td>
+                            <td class="cell100 column4">Min 10</td>
+                            <td class="cell100 column5">Soon</td>
+                            <td class="cell100 column6">Room 2</td>
+                            <td class="cell100 column7">François</td>
+                        </tr>
+                        <tr data-ville="Toulouse"class="row100 body">
+                            <td class="cell100 column1">Data Science</td>
+                            <td class="cell100 column2">Toulouse</td>
+                            <td class="cell100 column3">14:00 - 14:30</td>
+                            <td class="cell100 column4">-</td>
+                            <td class="cell100 column5">Soon</td>
+                            <td class="cell100 column6">No room</td>
+                            <td class="cell100 column7">José</td>
+                        </tr>
+                        <tr data-ville="Berlin"class="row100 body">
+                            <td class="cell100 column1">Finance topic</td>
+                            <td class="cell100 column2">Berlin</td>
+                            <td class="cell100 column3">14:30 - 15:00</td>
+                            <td class="cell100 column4">-</td>
+                            <td class="cell100 column5">Soon</td>
+                            <td class="cell100 column6">No room</td>
+                            <td class="cell100 column7">Hans</td>
+                        </tr>
+                        <tr data-ville="Berlin"class="row100 body">
+                            <td class="cell100 column1">IFRS Topic</td>
+                            <td class="cell100 column2">Berlin</td>
+                            <td class="cell100 column3">15:00 - 15:30</td>
+                            <td class="cell100 column4">-</td>
+                            <td class="cell100 column5">Soon</td>
+                            <td class="cell100 column6">No room</td>
+                            <td class="cell100 column7">Hans</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <a class="stylebouton" href="https://urldenotresite" target="_blank">Add a topic</a>
+                <style>
+                    a.stylebouton {
 
-<form action="csvexport.php" method="post">
-    <input type="hidden" name="csvText" id="csvText"/>
-</form>
+                        -webkit-border-radius: 2px;
 
+                        -moz-border-radius: 10px;
+
+                        border-radius: 10px;
+
+                        border: solid thin #00971E;
+
+                        text-shadow: none;
+
+                        background-image: linear-gradient(#afce26,#00998b);
+
+                        color: buttontext;
+
+                        padding: 3px 8px;
+
+                        margin: 2px;
+
+                        text-decoration: none;
+
+                        font-family: Arial;
+
+                        font-size: 13.1999998092651px;
+
+                    }
+
+                    a.stylebouton:hover {
+
+                        background-image: -webkit-linear-gradient(top, #DDDDDD, #F6F6F6);
+
+                        background-image: -moz-linear-gradient(top, #DDDDDD, #F6F6F6);
+
+                        background-image: -ms-linear-gradient(top, #DDDDDD, #F6F6F6);
+
+                        background-image: -o-linear-gradient(top, #DDDDDD, #F6F6F6, #DDDDDD);
+
+                        background-image: linear-gradient(to bottom, #DDDDDD, #F6F6F6);
+
+                    }
+                </style>
+            </div>
+            <script type="text/javascript">
+                function filtrerVille(elem)
+                {
+                    var data = elem.dataset.ville;
+                    alert(elem.dataset.ville);
+                    var row = document.getElementsByTagName('tr');
+                    for (var i = 0; i < row.length; i++)
+                    {
+                        if(row[i].dataset.ville != data) row[i].style.display = 'none';
+                    }
+
+                }
+            </script>
 </body>
-
 </html>
