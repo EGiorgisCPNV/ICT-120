@@ -14,27 +14,6 @@ function SwitchPass() {
 }
 
 
-//fonction pour enrgistrer l'email et le mdp dans un fichier externe (mais elle ne marche pas)
-function Stockage() {
-
-    var emailAStocker = document.getElementById("email").value;
-
-    var mdpAStocker = document.getElementById("mdp").value;
-
-    // Sauvegarder les informations dans l’espace local courant
-    localStorage.setItem("login", emailAStocker);
-
-    // Sauvegarder les informations dans l’espace local courant
-    localStorage.setItem("motDePasse", mdpAStocker);
-
-    // Accéder à des données enregistrées
-    //alert("login = " + localStorage.getItem("login") + "\n" + "mot de passe = "+ localStorage.getItem("motDePasse"));
-
-    window.location.replace("page_activité_avec_login.html");
-
-}
-
-
 //fonction qui verifie si l'email et le mdp si il correspond au compte register
 function Verification() {
 
@@ -86,15 +65,40 @@ function Ajouter() {
     cell5.innerHTML = valeurIndex4;
     cell6.innerHTML = valeurIndex5;
     cell7.innerHTML = valeurIndex6;
+    
+}
+
+
+//
+function abc() {
+
+    var table = document.getElementById("myTable");
+    var row = table.insertRow(0);
+
+    var valeurIndex0 = document.getElementById("index0").value;
+    var valeurIndex1 = document.getElementById("index1").value;
+    var valeurIndex2 = document.getElementById("index2").value;
+    var valeurIndex3 = document.getElementById("index3").value;
+    var valeurIndex4 = document.getElementById("index4").value;
+    var valeurIndex5 = document.getElementById("index5").value;
+    var valeurIndex6 = document.getElementById("index6").value;
+
+
+    var tableau = [valeurIndex0, valeurIndex1, valeurIndex2, valeurIndex3, valeurIndex4, valeurIndex5, valeurIndex6];
+
+    // Sauvegarder les informations dans l’espace local courant
+    localStorage.setItem("Tableau", tableau);
+
+    var z = localStorage.getItem("Tableau");
+    cell1.innerHTML = z[0];
 
 
 }
 
-
 //fonction pour le prix total (NE FONCTIONNE PAS)
-function prixTotal(){
+function prixTotal() {
 
-    prixTotale.value= valeurIndex4.value;
+
 }
 
 
@@ -120,11 +124,39 @@ function closeNav() {
 
 //fonction pour le filtre (NE FONCTIONNE PAS)
 function filtre() {
-    var a=document.getElementById("ListeDeroulante").value;
+    var a = document.getElementById("ListeDeroulante").value;
 
 
-if(a.value==="Culture"){
-    alert("asidhb");
+    if (a.value === "Culture") {
+        alert("asidhb");
+    }
+
 }
+
+
+//fonction pour enrgistrer l'email et le mdp dans un fichier externe (mais elle ne marche pas)
+function Stockage() {
+
+    var emailAStocker = document.getElementById("email").value;
+
+    var mdpAStocker = document.getElementById("mdp").value;
+
+    // Sauvegarder les informations dans l’espace local courant
+    localStorage.setItem("login", emailAStocker);
+
+    // Sauvegarder les informations dans l’espace local courant
+    localStorage.setItem("motDePasse", mdpAStocker);
+
+    // Accéder à des données enregistrées
+    //alert("login = " + localStorage.getItem("login") + "\n" + "mot de passe = "+ localStorage.getItem("motDePasse"));
+
+    window.location.replace("page_activité_avec_login.html");
+
+}
+
+
+//fonction pour enrgistrer mon tableau dans un localstorage
+function enrgistrerTableau() {
+
 
 }

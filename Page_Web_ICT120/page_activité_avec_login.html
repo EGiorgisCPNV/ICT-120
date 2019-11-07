@@ -4,7 +4,6 @@
 <!--Version:1.0-->
 
 
-
 <html lang="en">
 <head>
 
@@ -21,7 +20,7 @@
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 </head>
-<body>
+<body onload="abc()">
 
 
 <div class="container">
@@ -29,7 +28,7 @@
     <!-- logo du cpnv-->
     <div class="row" id="partieDuHaut">
         <div class="col-lg-3 col-md-4 col-sm-6 " id="logoCPNV">
-                <img src="images/logo Cpnv.png" alt="logoCpnv">
+            <img src="images/logo Cpnv.png" alt="logoCpnv">
             </a>
         </div>
 
@@ -74,6 +73,8 @@
                 <button value="supprimer" class="btn btn-primary btn-sm" id="btnSupprimer" onclick="Delete()">
                     Supprimer
                 </button>
+
+
                 <div class="table-responsive">
                     <!--La table-->
                     <table id="myTable">

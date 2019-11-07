@@ -210,3 +210,9 @@ body{
     margin-left:68px;
     margin-top: 3px;
 }
+
+#btnEnrgistrer{
+    position:fixed;
+    margin-left:150px;
+    margin-top: 3px;
+}

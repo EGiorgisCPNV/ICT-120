@@ -1,32 +1,74 @@
-<!--Navbar-->
-<nav class="navbar navbar-light navbar-1 white">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>un</title>
+    <script type='text/javascript'>
+        function  createCSV(obj){
+            var tab=document.getElementById(obj);
+            var Tablignes =tab.getElementsByTagName('tr');
 
-    <!-- Navbar brand -->
-    <a class="navbar-brand" href="#">Navbar</a>
+            var CSVText="";
+            var x=0;
 
-    <!-- Collapse button -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15"
-            aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            while(Tablignes[x]){
+                TabCol=Tablignes[x].getElementsByTagName('td');
+                var ArrLine=new Array();
+                var y=0;
+                while (TabCol[y]){
+                    ArrLine.push(TabCol[y].innerHTML+';');
+                    y++;
+                }
+                CSVText+=ArrLine.join('\t')+'\n';
+                x++;
+            }
+            document.getElementById("csvText").value=CSVText;
+            document.forms[0].submit();
+        }
 
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent15">
+    </script>
+</head>
 
-        <!-- Links -->
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-            </li>
-        </ul>
-        <!-- Links -->
+<body>
 
-    </div>
-    <!-- Collapsible content -->
+<table id="tableau" border="1" width="100%">
+    <tr>
+        <td width="20%">un </td>
+        <td width="20%">deux</td>
+        <td width="20%">trois</td>
+        <td width="20%">quatre</td>
+        <td width="20%">cinq</td>
+    </tr>
+    <tr>
+        <td width="20%">1</td>
+        <td width="20%">2</td>
+        <td width="20%">3</td>
+        <td width="20%">4</td>
+        <td width="20%">5</td>
+    </tr>
+    <tr>
+        <td width="20%">un </td>
+        <td width="20%">deux</td>
+        <td width="20%">trois</td>
+        <td width="20%">quatre</td>
+        <td width="20%">cinq</td>
+    </tr>
+    <tr>
+        <td width="20%">1</td>
+        <td width="20%">2</td>
+        <td width="20%">3</td>
+        <td width="20%">4</td>
+        <td width="20%">5</td>
+    </tr>
+</table>
 
-</nav>
-<!--/.Navbar-->
+<p>
+    <button onclick="createCSV('tableau')">EXPORTER en CSV</button>
+</p>
+
+<form action="csvexport.php" method="post">
+    <input type="hidden" name="csvText" id="csvText"/>
+</form>
+
+</body>
+
+</html>
