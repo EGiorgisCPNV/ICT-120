@@ -1,3 +1,8 @@
+//Auteur:Esteban Giorgis
+//Titre:Page d'activité en étant login de mon site web
+//date:15.10.2019
+//Version:1.0
+
 //fonction qui permet d'afficher le mot de passe (FONCTIONNEL)
 function SwitchPass() {
     var typeInput = document.getElementById('mdp');
@@ -125,9 +130,11 @@ function prixTotal() {
 
 //fonction qui supprimme une ligne du dessus (FONCTIONNEL)
 function Delete() {
+
     for (var i = 0; i < 1; i++) {
         document.getElementById('myTable').deleteRow(i);
     }
+
 }
 
 
