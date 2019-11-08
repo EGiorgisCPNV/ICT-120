@@ -1,7 +1,7 @@
 
-body{
+body {
 
-    background: url(images/blue-mountains-colline-fond-d-ecran-1758641.jpg) center;
+    background: url(../images/blue-mountains-colline-fond-d-ecran-1758641.jpg)center;
     background-size: cover;
     font-family: sans-serif;
 }
@@ -42,8 +42,7 @@ body{
 }
 
 
-
-#titreActivite{
+#titreActivite {
     background-color: turquoise;
     border-style: solid;
     border-radius: 3px;
@@ -54,7 +53,7 @@ body{
 
 
 #activités {
-    height:100%;
+    height: 100%;
     border-style: solid;
     border-radius: 3px;
     border-width: 1px;
@@ -64,12 +63,12 @@ body{
 }
 
 
-#partieDuHaut{
-    margin-bottom:20px;
+#partieDuHaut {
+    margin-bottom: 20px;
 }
 
-#Connexion{
-    float:right
+#Connexion {
+    float: right
 }
 
 
@@ -90,7 +89,7 @@ body{
     border: 1px solid #ddd;
     font-size: 18px;
     color: #ffffff;
-    margin-top:35px;
+    margin-top: 3px;
 }
 
 #myTable th, #myTable td {
@@ -101,7 +100,6 @@ body{
 #myTable tr {
     border-bottom: 1px solid #ddd;
 }
-
 
 #filtre {
     border-collapse: collapse;
@@ -124,13 +122,13 @@ body{
 }
 
 
-#bouttonRecherche{
+#bouttonRecherche {
     border-radius: 3px;
     border-width: 1px;
 }
 
-#boutton{
-    margin:auto;
+#boutton {
+    margin: auto;
     vertical-align: center;
 }
 
@@ -174,46 +172,51 @@ body{
 }
 
 @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
 }
 
-#index0{
-    color: #000000;
-}
-#index1{
-    color: #000000;
-}
-#index2{
-    color: #000000;
-}
-#index3{
-    color: #000000;
-}
-#index4{
-    color: #000000;
-}
-#index5{
-    color: #000000;
-}
-#index6{
+#index0 {
     color: #000000;
 }
 
-#btnAjouter{
-    position:fixed;
+#index1 {
+    color: #000000;
+}
+
+#index2 {
+    color: #000000;
+}
+
+#index3 {
+    color: #000000;
+}
+
+#index4 {
+    color: #000000;
+}
+
+#index5 {
+    color: #000000;
+}
+
+#index6 {
+    color: #000000;
+}
+
+#btnAjouter {
     margin-top: 3px;
     margin-left: 3px;
+
 }
 
-#btnSupprimer{
-    position:fixed;
-    margin-left:68px;
+#btnSupprimer {
     margin-top: 3px;
+    margin-left: 10px;
 }
 
-#btnEnrgistrer{
-    position:fixed;
-    margin-left:150px;
-    margin-top: 3px;
-}

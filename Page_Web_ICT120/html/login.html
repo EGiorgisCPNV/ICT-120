@@ -1,23 +1,24 @@
 <!--Auteur:Esteban Giorgis-->
-<!--Titre:Register-->
+<!--Titre:Login-->
 <!--date:15.10.2019-->
 <!--Version:1.0-->
-
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
 
     <meta charset="UTF-8">
-    <title>Register</title>
+    <title>Login</title>
 
     <!--lien pour le css, bootstrap et le javascript-->
-    <link rel="stylesheet" type="text/css" href="registerCSS.css">
-    <link rel="stylesheet" href="bootstrap-4.3.1-dist/bootstrap.css">
-    <script type="text/javascript" src="JavascriptIndex.js"></script>
+    <link rel="stylesheet" href="../css/loginCSS.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="../js/JavascriptIndex.js"></script>
 
     <!--lien pour utiliser des glyphicon-->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
 
 </head>
 <body>
@@ -28,12 +29,12 @@
         <!-- logo du cpnv-->
         <div class="row">
             <div class="col-lg-3 col-md-4 col-sm-6 " id="logoCPNV">
-                <a href="login.html">
-                    <img src="images/logo Cpnv.png" alt="logoCpnv">
-                </a>
+                <img src="../images/logo Cpnv.png">
+
             </div>
 
             <!--bando : "Voyage d'étude"-->
+
             <div class="col">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="bandoVE">
                     <h3><strong>Voyage d'étude</strong></h3>
@@ -41,8 +42,8 @@
                 </div>
 
 
-                <!--Fil d'arianne-->
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="filDarianne">
+                <!--fil d'ariane-->
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="filDariane">
                     <a href="page_activite_sans_login.html">Accueil </a> /
                     <a href="login.html">login </a>
 
@@ -52,9 +53,9 @@
         </div>
     </div>
 
-
     <!--block qui contien la demande d'email et du mot de passe-->
-    <h3 id="titreLogin"><strong>Register</strong></h3>
+    <h3 id="titreLogin"><strong>Login</strong></h3>
+
     <div id="blockDuBas">
         <form>
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -69,11 +70,13 @@
                 <div class="form-group">
                     <h4 id="titreMDP">Mot de passe</h4>
                     <input type="password" class="form-control" id="mdp"
-                           placeholder="Entrer votre mot de passe" onload="SwitchPass()">
+                           placeholder="Mot de passe" onload="SwitchPass()">
 
                     <a class="glyphicon glyphicon-eye-open" id="oeil" onclick="SwitchPass()"></a>
+                    <br>
+                    <a href="register.html">Créer un nouveau compte </a>
                 </div>
-                <button type="button" class="btn btn-primary" id="bouttonConnection" onclick="Stockage()">Créer compte
+                <button type="button" class="btn btn-primary" id="bouttonConnection" onclick="Verification()">Connexion
                 </button>
             </div>
 

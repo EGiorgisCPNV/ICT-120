@@ -109,14 +109,12 @@ function abc() {
      var tableau=[valeurIndex0.value,valeurIndex1.value,valeurIndex2.value,valeurIndex3.value,valeurIndex4.value,valeurIndex5.value,valeurIndex6.value];
 
 
-
-    window.localStorage.setItem("TableauStocker", tableau[1]);
-    var a=localStorage.getItem("TableauStocker");
-
-    for(var i=0;i<50;i++){
-
-        alert(a[i]);
-    }
+for(var i=0;i<7;i++){
+    window.localStorage.setItem("TableauStocker", tableau[i]);
+    var j=localStorage.getItem("TableauStocker");
+    j=document.createElement("input").innerText;
+    document.write(j);
+}
 
 }
 
@@ -124,6 +122,7 @@ function abc() {
 //fonction pour le prix total (NON FONCTIONNEL)
 function prixTotal() {
 
+    var a = document.getElementById()
 
 }
 

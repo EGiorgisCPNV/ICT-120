@@ -1,7 +1,6 @@
 
 body {
-
-    background: url(images/blue-mountains-colline-fond-d-ecran-1758641.jpg) center;
+    background: url(../images/blue-mountains-colline-fond-d-ecran-1758641.jpg)center;
     background-size: cover;
     font-family: sans-serif;
 }
@@ -89,7 +88,7 @@ body {
     border: 1px solid #ddd;
     font-size: 18px;
     color: #ffffff;
-    margin-top: 35px;
+    margin-top: 3px;
 }
 
 #myTable th, #myTable td {
@@ -210,19 +209,14 @@ body {
 }
 
 #btnAjouter {
-    position: fixed;
     margin-top: 3px;
     margin-left: 3px;
+
 }
 
 #btnSupprimer {
-    position: fixed;
-    margin-left: 68px;
     margin-top: 3px;
+    margin-left: 10px;
 }
 
-#btnEnrgistrer {
-    position: fixed;
-    margin-left: 150px;
-    margin-top: 3px;
-}
+
