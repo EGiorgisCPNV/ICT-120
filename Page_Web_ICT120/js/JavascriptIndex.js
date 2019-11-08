@@ -6,7 +6,6 @@
 //fonction qui permet d'afficher le mot de passe (FONCTIONNEL)
 function SwitchPass() {
     var typeInput = document.getElementById('mdp');
-    var txtHREF = document.getElementById('oeil');
 
     if (typeInput.type === 'password') {
         typeInput.type = 'text';
@@ -40,7 +39,6 @@ function Stockage() {
 }
 
 
-
 //fonction qui verifie si l'email et le mdp si il correspond au compte register(FONCTIONNEL)
 function Verification() {
 
@@ -54,7 +52,7 @@ function Verification() {
         window.location.replace("page_activité_avec_login.html");
     } else {
 
-        alert('Error message: ' + "L'email ou le mot de passe est incorrect");
+        window.alert('Error message: ' + "L'email ou le mot de passe est incorrect");
         window.location.replace("login.html");
     }
 
@@ -84,7 +82,10 @@ function Ajouter() {
     var valeurIndex5 = document.getElementById("index5").value;
     var valeurIndex6 = document.getElementById("index6").value;
 
-
+if(valeurIndex0.value===null || valeurIndex1.value===null || valeurIndex2.value===null || valeurIndex3.value===null || valeurIndex4.value===null || valeurIndex5.value===null || valeurIndex6.value===null){
+    alert("vous avez oublier de remplire une ou plusieurs cases");
+}
+else{
     cell1.innerHTML = valeurIndex0;
     cell2.innerHTML = valeurIndex1;
     cell3.innerHTML = valeurIndex2;
@@ -92,6 +93,8 @@ function Ajouter() {
     cell5.innerHTML = valeurIndex4;
     cell6.innerHTML = valeurIndex5;
     cell7.innerHTML = valeurIndex6;
+}
+
 
 }
 
@@ -106,15 +109,15 @@ function abc() {
     var valeurIndex5 = document.getElementById("index5").value;
     var valeurIndex6 = document.getElementById("index6").value;
 
-     var tableau=[valeurIndex0.value,valeurIndex1.value,valeurIndex2.value,valeurIndex3.value,valeurIndex4.value,valeurIndex5.value,valeurIndex6.value];
+    var tableau = [valeurIndex0.value, valeurIndex1.value, valeurIndex2.value, valeurIndex3.value, valeurIndex4.value, valeurIndex5.value, valeurIndex6.value];
 
 
-for(var i=0;i<7;i++){
-    window.localStorage.setItem("TableauStocker", tableau[i]);
-    var j=localStorage.getItem("TableauStocker");
-    j=document.createElement("input").innerText;
-    document.write(j);
-}
+    for (var i = 0; i < 7; i++) {
+        window.localStorage.setItem("TableauStocker", tableau[i]);
+        var j = localStorage.getItem("TableauStocker");
+        j = document.createElement("input").innerText;
+        document.write(j);
+    }
 
 }
 
@@ -127,12 +130,19 @@ function prixTotal() {
 }
 
 
-//fonction qui supprimme une ligne du dessus (FONCTIONNEL)
+//fonction qui supprimme une ligne du dessus (FONCTIONNEL [mais peut aussi suprimmer la ligne de base])
 function Delete() {
 
     for (var i = 0; i < 1; i++) {
         document.getElementById('myTable').deleteRow(i);
+
+        /*cette condition ne marche pas
+        if(i===2){
+            alert('vous ne pouvez pas supprimer la ligne de base');
+        }
+        */
     }
+
 
 }
 
@@ -148,10 +158,6 @@ function closeNav() {
 }
 
 
-
-
-
-
 //fonction pour rechercher par type (FONCTIONNEL)
 function filtreType() {
 
@@ -164,40 +170,88 @@ function filtreType() {
 //boucle qui vérifie chaque row
     for (i = 0; i < tr.length; i++) {
         td = tr[i].getElementsByTagName("td")[1];
-            txtValue = td.textContent || td.innerText;
-            if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                tr[i].style.display = "";
-            } else {
-                tr[i].style.display = "none";
-            }
+        txtValue = td.textContent || td.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+        } else {
+            tr[i].style.display = "none";
+        }
 
     }
 }
 
 
 //fonction qui change les couleurs du bando, fil d'arianne etc... (FONCTIONNEL)
-function changerCouleurBlanc(){
+function changerCouleurBlanc() {
 
-    var element=document.getElementById("bandoVE");
-    var element1=document.getElementById("filDarianne");
-    var element2=document.getElementById("titreActivite");
+    var element = document.getElementById("bandoVE");
+    var element1 = document.getElementById("filDarianne");
+    var element2 = document.getElementById("titreActivite");
 
 
-    element.style.backgroundColor="#ffffff";
-    element1.style.backgroundColor="#ffffff";
-    element2.style.backgroundColor="#ffffff";
+    element.style.backgroundColor = "#FFFFFF";
+    element1.style.backgroundColor = "#FFFFFF";
+    element2.style.backgroundColor = "#FFFFFF";
 }
 
 
 //fonction qui change les couleurs du bando, fil d'arianne etc... (FONCTIONNEL)
-function changerCouleurTurquoise(){
+function changerCouleurTurquoise() {
 
-    var element=document.getElementById("bandoVE");
-    var element1=document.getElementById("filDarianne");
-    var element2=document.getElementById("titreActivite");
+    var element = document.getElementById("bandoVE");
+    var element1 = document.getElementById("filDarianne");
+    var element2 = document.getElementById("titreActivite");
 
 
-    element.style.backgroundColor="turquoise";
-    element1.style.backgroundColor="turquoise";
-    element2.style.backgroundColor="turquoise";
+    element.style.backgroundColor = "turquoise";
+    element1.style.backgroundColor = "turquoise";
+    element2.style.backgroundColor = "turquoise";
+}
+
+
+
+//fonction modifier une ou plusieurs lignes(FONCTIONNEL)
+function midifier() {
+
+    table = ligneAjoutee.children;
+
+    for (nbline = 0; nbline < ligneAjoutee.children.length; nbline++) {
+
+        row = ligneAjoutee.children[nbline];
+        for (nbcol = 0; nbcol < row.children.length; nbcol++) {
+
+            cell = row.children[nbcol];
+            inp = document.createElement('input');
+            inp.type = 'text';
+            inp.value = cell.innerHTML;
+            cell.innerHTML = '';
+           cell.style.color='#000000';
+            cell.appendChild(inp)
+        }
+    }
+
+    btnModifier.classList.add('d-none');
+    btnEnrgistrer.classList.remove('d-none');
+}
+
+
+
+
+//fonction pour enrgistrer les modifications (FONCTIONNEL)
+function enrgistrer() {
+    table = ligneAjoutee.children;
+
+    for (nbline = 0; nbline < ligneAjoutee.children.length; nbline++) {
+
+        row = ligneAjoutee.children[nbline];
+        for (nbcol = 0; nbcol < row.children.length; nbcol++) {
+
+            cell = row.children[nbcol];
+            cell.innerHTML = cell.firstChild.value;
+            cell.style.color='#ffffff';
+
+        }
+        btnModifier.classList.remove('d-none');
+        btnEnrgistrer.classList.add('d-none');
+    }
 }

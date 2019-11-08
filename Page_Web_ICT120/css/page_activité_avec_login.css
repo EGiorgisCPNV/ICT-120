@@ -1,4 +1,9 @@
-
+/*
+Auteur:Esteban Giorgis
+Titre:Page avec le login CSS
+Date:15.10.2019
+Version:1.0
+ */
 body {
 
     background: url(../images/blue-mountains-colline-fond-d-ecran-1758641.jpg)center;
@@ -47,7 +52,7 @@ body {
     border-style: solid;
     border-radius: 3px;
     border-width: 1px;
-    padding: 5px;
+    padding: 16px;
 
 }
 
@@ -101,85 +106,6 @@ body {
     border-bottom: 1px solid #ddd;
 }
 
-#filtre {
-    border-collapse: collapse;
-    width: 100%;
-    border: 1px solid #ddd;
-    font-size: 18px;
-}
-
-#filtre th, #filtre td {
-    text-align: left;
-    padding: 12px;
-}
-
-#filtre tr {
-    border-bottom: 1px solid #ddd;
-}
-
-#filtre tr.header, #filtre tr:hover {
-    background-color: #f1f1f1;
-}
-
-
-#bouttonRecherche {
-    border-radius: 3px;
-    border-width: 1px;
-}
-
-#boutton {
-    margin: auto;
-    vertical-align: center;
-}
-
-.bold-blue {
-    font-weight: bold;
-    color: #0277BD;
-}
-
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidenav a:hover {
-    color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-@media screen and (max-height: 450px) {
-    .sidenav {
-        padding-top: 15px;
-    }
-
-    .sidenav a {
-        font-size: 18px;
-    }
-}
 
 #index0 {
     color: #000000;
@@ -217,6 +143,18 @@ body {
 
 #btnSupprimer {
     margin-top: 3px;
-    margin-left: 10px;
+    margin-left: 3px;
+}
+
+
+#btnModifier {
+    margin-top: 3px;
+    margin-left: 3px;
+}
+
+
+#btnEnrgistrer {
+    margin-top: 3px;
+    margin-left: 3px;
 }
 

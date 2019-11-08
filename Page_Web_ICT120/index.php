@@ -1,5 +1,10 @@
 <?php
 
+
+//--LE PHP N'EST PAS UTILISE--//
+
+
+
 //Declaration des variables
 $nom=$_POST["Nom"];
 $adresse=$_POST["Adresse"];

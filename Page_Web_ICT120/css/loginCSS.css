@@ -1,3 +1,9 @@
+/*
+Auteur:Esteban Giorgis
+Titre:Login CSS
+Date:15.10.2019
+Version:1.0
+ */
 
 body{
     background: url(../images/blue-mountains-colline-fond-d-ecran-1758641.jpg)center;
@@ -39,14 +45,6 @@ body{
     background-color: turquoise;
 }
 
-#groupbox {
-    border-collapse: separate;
-    border: solid #2e6da4 1px;
-    border-radius: 3px;
-
-}
-
-
 
 #blockDuHaut {
     margin-bottom: 20px;
@@ -70,19 +68,6 @@ body{
 }
 
 
-.footer {
-    border-style: solid;
-    border-radius: 3px;
-    border-width: 1px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
-    background-color: turquoise;
-    z-index: 50;
-
-}
-
 #titreIdentifiant {
     text-align: center;
 }
@@ -97,7 +82,7 @@ body{
     border-style: solid;
     border-radius: 3px;
     border-width: 1px;
-    padding: 5px;
+    padding: 15px;
     text-align: center;
 }
 
@@ -123,9 +108,4 @@ body{
 
 #mdp{
     margin-bottom:5px;
-}
-
-#barreRecherche{
-    border-radius: 3px;
-    border-width: 1px;
 }
