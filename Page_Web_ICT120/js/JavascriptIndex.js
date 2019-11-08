@@ -34,6 +34,7 @@ function Stockage() {
     // Accéder à des données enregistrées
     //alert("login = " + localStorage.getItem("login") + "\n" + "mot de passe = "+ localStorage.getItem("motDePasse"));
 
+    alert("La création de votre compte a été faite avec succès");
     window.location.replace("page_activité_avec_login.html");
 
 }
@@ -49,6 +50,7 @@ function Verification() {
     var recupMdp = document.getElementById("mdp").value;
 
     if (verificationLogin === recupEmail && verificationMdp === recupMdp) {
+
         window.location.replace("page_activité_avec_login.html");
     } else {
 
