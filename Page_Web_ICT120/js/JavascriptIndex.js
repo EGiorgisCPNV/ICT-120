@@ -1,5 +1,5 @@
 //Auteur:Esteban Giorgis
-//Titre:Page d'activité en étant login de mon site web
+//Titre: Fichier javascript
 //date:15.10.2019
 //Version:1.0
 
